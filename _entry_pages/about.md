@@ -1,6 +1,6 @@
 ---
 title: "#도움말"
-slug: help
+slug: about
 meta: null
 ---
 
