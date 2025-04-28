@@ -1,5 +1,4 @@
 ---
-title: "CSharp"
-ruby: "C#"
+title: CSharp
 slug: csharp
 ---

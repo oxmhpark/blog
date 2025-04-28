@@ -23,15 +23,15 @@ NEMORIUM.NET
 
 # 운영방침
 
-- 첨부 파일, 사설, 토막글은 [메모장][exonomicon]에 저장할 것.
+- 첨부 파일, 사설, 토막글은 메모장에 저장할 것.
 - 문서 구조를 단순하게 유지하고 주요 갱신이력을 남길 것.
 - 소통에 2차 비용을 치르지 말 것.
 
 # 할일
 
-- [ ] 지킬 템플릿 작성
-- [ ] 덧글 기능 추가
-- [ ] 검색 기능 추가
+- [x] 지킬 템플릿 작성
+- [x] 덧글 기능 추가
+- [x] 검색 기능 추가
 - [ ] 메모장 가동
 
 [github-pages]: https://pages.github.com
@@ -39,7 +39,6 @@ NEMORIUM.NET
 [giscus]: https://giscus.app
 [gpse]: https://programmablesearchengine.google.com
 [freesentation]: https://freesentation.blog
-[exonomicon]: https://github.com/oxmhpark/microblog
 [entry-posts]: https://github.com/oxmhpark/blog/tree/main/_entry_posts
 [entry-pages]: https://github.com/oxmhpark/blog/tree/main/_entry_pages
 [entry-terms]: https://github.com/oxmhpark/blog/tree/main/_entry_terms

@@ -1,15 +1,15 @@
 ---
 published: true
-title: "VS Code: 주요 메모"
+title: "VSCode: 주요 메모"
 slug: "vscode-주요-메모"
 date: 2025-04-04 10:34:25 +0900
 lastmod: null
 years:
   - 2025
 categories:
-  - 블로그 관리
+  - 개발 노트
 tags:
-  - VS Code
+  - VSCode
 excerpt: "사용자 확장 / 기타"
 ---
 # 사용자 확장
