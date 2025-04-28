@@ -3,20 +3,28 @@ NEMORIUM.NET
 
 [옥수박](https://github.com/oxmhpark)의 개인 블로그.
 
-# 기술
+# 적용기술
 
-- 플랫폼: [깃허브 페이지스](https://pages.github.com)
-- 블로그 프레임워크: [지킬](https://jekyllrb.com)
-- 덧글 프레임워크: [giscus](https://giscus.app)
-- 검색 프레임워크: [GPSE](https://programmablesearchengine.google.com)
-- 디자인 리소스: [Freesentation](https://freesentation.blog)
+- 플랫폼: [깃허브 페이지스][github-pages]
+- 블로그 프레임워크: [지킬][jekyll]
+- 덧글 프레임워크: [giscus][giscus]
+- 검색 프레임워크: [GPSE][gpse]
+- 디자인 리소스: [Freesentation][freesentation]
 
-# 방침
+# 형식규정
 
-- 첨부 파일, 사설, 토막글은 메모장에 저장할 것.
-- 문서에 주요 업데이트 이력을 남길 것.
-- [`categories`](https://github.com/oxmhpark/blog/tree/main/_archive_categories)는 도메인에, [`tags`](https://github.com/oxmhpark/blog/tree/main/_archive_tags)는 프로젝트에 대응할 것.
-- [`terms`](https://github.com/oxmhpark/blog/tree/main/_entry_terms), [`bookmarks`](https://github.com/oxmhpark/blog/tree/main/_entry_bookmarks) 타입을 남발하지 말 것.
+- [`entry_posts`][entry-posts]: 휘발성 게시물(기본값)
+- [`entry_pages`][entry-pages]: 계속 관리할 게시물
+- [`entry_terms`][entry-terms]: 개념어 스크랩
+- [`entry_bookmarks`][entry-bookmarks]: 인터넷 주소록
+- [`archive_categories`][archive-categories]: 게시물의 종류
+- [`archive_tags`][archive-tags]: 게시물이 소속된 프로젝트
+- [`archive_years`][archive-years]: 게시물이 소속된 연도
+
+# 운영방침
+
+- 첨부 파일, 사설, 토막글은 [메모장][exonomicon]에 저장할 것.
+- 문서 구조를 단순하게 유지하고 주요 갱신이력을 남길 것.
 - 소통에 2차 비용을 치르지 말 것.
 
 # 할일
@@ -25,3 +33,17 @@ NEMORIUM.NET
 - [ ] 덧글 기능 추가
 - [ ] 검색 기능 추가
 - [ ] 메모장 가동
+
+[github-pages]: https://pages.github.com
+[jekyll]: https://jekyllrb.com
+[giscus]: https://giscus.app
+[gpse]: https://programmablesearchengine.google.com
+[freesentation]: https://freesentation.blog
+[exonomicon]: https://github.com/oxmhpark/microblog
+[entry-posts]: https://github.com/oxmhpark/blog/tree/main/_entry_posts
+[entry-pages]: https://github.com/oxmhpark/blog/tree/main/_entry_pages
+[entry-terms]: https://github.com/oxmhpark/blog/tree/main/_entry_terms
+[entry-bookmarks]: https://github.com/oxmhpark/blog/tree/main/_entry_bookmarks
+[archive-categories]: https://github.com/oxmhpark/blog/tree/main/_archive_categories
+[archive-tags]: https://github.com/oxmhpark/blog/tree/main/_archive_tags
+[archive-years]: https://github.com/oxmhpark/blog/tree/main/_archive_years
