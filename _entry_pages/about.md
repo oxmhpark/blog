@@ -1,10 +1,10 @@
 ---
-title: "#도움말"
+title: "#소개"
 slug: about
 meta: null
 ---
 
-# 웹사이트 소개
+# 「NEMORIUM.NET」은:
 
 - [옥수박]({{ site.data.links.oxmhpark-github-profile }})이 메모를 정리하고 잡글을 쓰는 개인 블로그이다.
 - [깃허브 페이지스]({{ site.data.links.github-pages }}), [giscus]({{ site.data.links.giscus }}), [GPSE]({{ site.data.links.gpse }}), [Freesentation]({{ site.data.links.freesentation }}) 등을 이용해서 제작했다.
@@ -12,7 +12,7 @@ meta: null
 
 [^1]: 소통이 주된 운영목적은 아니기 때문이다.
 
-# 옥수박 소개
+# 「옥수박」은:
 
 - 생업 및 취미로 비디오 게임을 만든다.[^2]
 - Sci-Fi, 바바리안 판타지, 음모론을 편식한다.[^3]

@@ -14,7 +14,7 @@
   class: ""
   icon: ""
 -
-  name: "#도움말"
-  url: "/help"
+  name: "#소개"
+  url: "/about"
   class: ""
   icon: ""
