@@ -137,7 +137,7 @@ collections:
     path: _pages
     permalink: ":slug"
     layout: page
-  entry_posts:
+  entry_journals:
     output: true
     path: _entry_journals
     permalink: ":slug"
