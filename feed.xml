@@ -11,7 +11,7 @@ layout: raw
 		<pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 		<generator>Jekyll v{{ jekyll.version }}</generator>
-		{% assign posts = site.entry_posts | sort: 'updated' | reverse %}
+		{% assign posts = site.entry_journals | sort: 'updated' | reverse %}
 		{% for post in posts limit: 100 %}
 		<item>
 			<title>{{ post.title | xml_escape }}</title>

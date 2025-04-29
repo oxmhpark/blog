@@ -3,7 +3,9 @@ layout: raw
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{% for post in site.entry_posts %}
+
+{% assign posts = site.entry_journals | sort: 'updated' | reverse %}
+{% for post in posts %}
     <url>
         <loc>{{ post.url | prepend: site.url }}</loc>
 		{% if post.updated == null %}
@@ -24,25 +26,27 @@ layout: raw
 		{% endif %}
     </url>
 {% endfor %}
-{% for page in site.entry_pages %}
+
+{% assign posts = site.entry_pages | sort: 'updated' | reverse %}
+{% for post in posts %}
     <url>
-        <loc>{{ page.url | prepend: site.url }}</loc>
-		{% if page.updated == null %}
-		<lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+        <loc>{{ post.url | prepend: site.url }}</loc>
+		{% if post.updated == null %}
+		<lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
 		{% else %}
-		<lastmod>{{ page.updated | date_to_xmlschema }}</lastmod>
+		<lastmod>{{ post.updated | date_to_xmlschema }}</lastmod>
 		{% endif %}
 
-		{% if page.sitemap.changefreq == null %}
+		{% if post.sitemap.changefreq == null %}
 		<changefreq>daily</changefreq>
 		{% else %}
-		<changefreq>{{ page.sitemap.changefreq }}</changefreq>
+		<changefreq>{{ post.sitemap.changefreq }}</changefreq>
 		{% endif %}
 
-		{% if page.sitemap.priority == null %}
+		{% if post.sitemap.priority == null %}
 		<priority>0.5</priority>
 		{% else %}
-		<priority>{{ page.sitemap.priority }}</priority>
+		<priority>{{ post.sitemap.priority }}</priority>
 		{% endif %}
     </url>
 {% endfor %}

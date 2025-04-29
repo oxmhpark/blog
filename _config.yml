@@ -66,7 +66,7 @@ defaults:
         label: "전문 읽기 &rarr;"
   -
     scope:
-      path: "_entry_posts"
+      path: "_entry_journals"
     values:
       layout: "post"
       meta:
@@ -139,7 +139,7 @@ collections:
     layout: page
   entry_posts:
     output: true
-    path: _entry_posts
+    path: _entry_journals
     permalink: ":slug"
     layout: post
   entry_pages:
