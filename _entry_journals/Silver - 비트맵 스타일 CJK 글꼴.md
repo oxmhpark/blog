@@ -1,7 +1,7 @@
 ---
 published: true
 title: "Silver: 비트맵 스타일 CJK 글꼴"
-slug: "silver-비트맵-스타일-cjk-글꼴"
+slug: "silver-bitmap-style-cjk-font"
 date: 2025-02-21 00:00:00 +0900
 years:
   - 2025

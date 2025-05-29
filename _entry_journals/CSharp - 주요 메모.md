@@ -1,7 +1,7 @@
 ---
 published: true
 title: "C#: 주요 메모"
-slug: "csharp-주요-메모"
+slug: "csharp-cheatsheet"
 date: 2025-03-30 13:19:47 +0900
 years:
   - 2025
