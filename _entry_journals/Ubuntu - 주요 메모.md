@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 title: "Ubuntu: 주요 메모"
 subtitle: ""
 ruby: ""

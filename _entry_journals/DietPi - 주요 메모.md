@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 title: "DietPi: 주요 메모"
 subtitle: ""
 ruby: ""
