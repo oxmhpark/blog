@@ -1,6 +1,6 @@
 ---
 published: true
-title: "깃: 주요 메모"
+title: "Git: 주요 메모"
 slug: "git-cheatsheet"
 excerpt: "저장소 관리 / 브랜치 관리 / 커밋·푸쉬 / 병합 / 기타"
 date: 2025-03-27 03:14:09 +0900
@@ -9,7 +9,9 @@ years:
 categories:
   - 개발 노트
 tags:
-  - 깃
+  - Git
+  - VCS
+  - Cheatsheet
 ---
 # 주요 명령어
 

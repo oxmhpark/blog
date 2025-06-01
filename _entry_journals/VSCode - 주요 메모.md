@@ -10,6 +10,8 @@ categories:
   - 개발 노트
 tags:
   - VSCode
+  - IDE
+  - Cheatsheet
 excerpt: "사용자 확장 / 기타"
 ---
 # 사용자 확장

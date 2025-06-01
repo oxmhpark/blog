@@ -1,9 +1,9 @@
 ---
 published: true
-title: "다이어트파이: 주요 메모"
+title: "Ubuntu: 주요 메모"
 subtitle: ""
 ruby: ""
-slug: "dietpi-cheatsheet"
+slug: "ubuntu-cheatsheet"
 date: 2025-05-24 17:52:30 +0900
 lastmod: 2025-05-24 17:52:37 +0900
 years:
@@ -12,6 +12,9 @@ categories:
   - 개발 노트
   - 시설 관리
 tags:
-  - 우분투
+  - Ubuntu
+  - Linux
+  - OS
+  - Cheatsheet
 excerpt: "파일 탐색 / 파일 편집 / 설치 및 삭제 / 인터넷 / 원격접속 / 외장 디스크 / "
 ---
