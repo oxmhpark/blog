@@ -1,5 +1,4 @@
 ---
-published: false
 title: BatStudio
 slug: "batstudio"
 address: https://ibatstudio.com/
