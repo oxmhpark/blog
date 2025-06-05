@@ -98,18 +98,18 @@ excerpt: 정수 / 실수 / 플래그 / 문자 / 날짜·시간 / 기타 타입 /
 
 # 비트 연산자
 
-|| 표현 | B5 | B4 | B3 | B2 | B1 | B0 | D |
-|---|---|---|---|---|---|---|---|---|
-| 예제 변수 | `x` | 0 | 0 | 0 | 1 | 1 | 0 | 6 |
-| 예제 변수 | `y` | 0 | 0 | 1 | 1 | 0 | 0 | 12 |
-| [논리 AND 연산자 `&`][ref-and] | `x & y` | 0 | 0 | 0 | 1 | 0 | 0 | 4 |
-| [논리 OR 연산자 `|`][ref-or] | `x | y` | 0 | 0 | 1 | 1 | 1 | 0 | 14 |
-| [논리 베타적 OR 연산자 `^`][ref-xor] | `x ^ y` | 0 | 0 | 1 | 0 | 1 | 0 | 10 |
-| [비트 보수 연산자 `~`][ref-not] | `~x` | 1 | 1 | 1 | 0 | 0 | 1 | 9 |
-| [비트 이동 연산자 `<<`][ref-이동-left] | `x << 1` | 0 | 0 | 1 | 1 | 0 | 0 | 12 |
-| | `x << 2` | 0 | 1 | 1 | 0 | 0 | 0 | 24 |
-| [비트 이동 연산자 `>>`][ref-이동-right] | `x >> 1` | 0 | 0 | 0 | 0 | 1 | 1 | 3 |
-|  | `x >> 2` | 0 | 0 | 0 | 0 | 0 | 1 | 1 |
+|| 표현 | Binary | Decimal |
+|---|---|---|---|
+| 예제 변수 | `x` | 000110 | 6 |
+| 예제 변수 | `y` | 001100 | 12 |
+| [논리 AND 연산자 `&`][ref-and] | `x & y` | 000100 | 4 |
+| [논리 OR 연산자 `\|`][ref-or] | `x \| y` | 001110 | 14 |
+| [논리 베타적 OR 연산자 `^`][ref-xor] | `x ^ y` | 001010 | 10 |
+| [비트 보수 연산자 `~`][ref-not] | `~x` | 111001 | 9 |
+| [비트 이동 연산자 `<<`][ref-이동-left] | `x << 1` | 001100 | 12 |
+| | `x << 2` | 011000 | 24 |
+| [비트 이동 연산자 `>>`][ref-이동-right] | `x >> 1` | 000011 | 3 |
+|  | `x >> 2` | 000001 | 1 |
 
 [ref-and]: https://learn.microsoft.com/ko-kr/dotnet/csharp/language-reference/operators/bitwise-and-이동-operators#logical-and-operator-
 [ref-or]: https://learn.microsoft.com/ko-kr/dotnet/csharp/language-reference/operators/bitwise-and-이동-operators#logical-or-operator-
