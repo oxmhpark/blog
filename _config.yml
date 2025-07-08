@@ -8,7 +8,7 @@
 
 # 빌드 타겟
 exclude:
-  - oxmhpark.code-workspace
+  - blog.code-workspace
   - _config.yml.sample
   - .gitattributes
   - .gitignore
@@ -17,6 +17,7 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - CNAME
+  - README.md
 
 # 운영자 정보
 author: "옥수박"
