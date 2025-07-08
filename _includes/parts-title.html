@@ -5,7 +5,7 @@
 --><span class="title"><!--
 {% if post.title %}
 	{% if post.ruby %}--><ruby><!--{% endif %}
-	{% if post.abbr %}--><abbr title="{{ post.abbr | strip_html }}"><!--{% endif %}
+	{% if post.abbr %}--><abbr data-title="{{ post.abbr | strip_html }}"><!--{% endif %}
 	--><span class="title-wrap">{{post.title}}</span><!--
 	{% if post.abbr %}--></abbr><!--{% endif %}
 	{% if post.ruby %}--><rt>{{ post.ruby }}</rt></ruby><!--{% endif %}
