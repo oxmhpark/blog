@@ -1,5 +1,5 @@
 ---
 title: IDE
-ruby: Integrated Development Environment
+abbr: Integrated Development Environment
 slug: ide
 ---

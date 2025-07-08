@@ -1,5 +1,5 @@
 ---
 title: VCS
-ruby: Version Control System
+abbr: Version Control System
 slug: vcs
 ---

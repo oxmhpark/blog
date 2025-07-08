@@ -1,5 +1,5 @@
 ---
 title: OS
-ruby: Operating System
+abbr: Operating System
 slug: os
 ---
