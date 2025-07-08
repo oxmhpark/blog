@@ -13,7 +13,6 @@ abbr:hover:after {
 	padding: 5px 15px;
 	position: absolute;
 	z-index: 98;
-	width: 220px;
 	content: attr(data-title);
 }
 
