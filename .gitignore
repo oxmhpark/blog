@@ -9,3 +9,6 @@ Gemfile.lock
 .DS_Store
 .localhost.log
 .localhost.pid
+/.obsidian
+/__TEMPLATES__
+_*.md

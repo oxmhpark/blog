@@ -1,7 +1,7 @@
 NEMORIUM.NET
 ============
 
-[옥수박](https://github.com/oxmhpark)의 개인 블로그.
+> [옥수박](https://github.com/oxmhpark)의 개인 블로그.
 
 # 적용기술
 
@@ -13,7 +13,7 @@ NEMORIUM.NET
 
 # 형식규정
 
-- [`entry_posts`][entry-posts]: 휘발성 게시물(기본값)
+- [`entry_journals`][entry-journals]: 휘발성 게시물(기본값)
 - [`entry_pages`][entry-pages]: 계속 관리할 게시물
 - [`entry_terms`][entry-terms]: 개념어 스크랩
 - [`entry_bookmarks`][entry-bookmarks]: 인터넷 주소록
@@ -23,26 +23,20 @@ NEMORIUM.NET
 
 # 운영방침
 
-- 첨부 파일, 사설, 토막글은 메모장에 저장할 것.
+- 첨부 파일, 사설, 토막글은 [메모장][memo]에 저장할 것.
 - 문서 구조를 단순하게 유지하고 주요 갱신이력을 남길 것.
 - 소통에 2차 비용을 치르지 말 것.
-
-# 할일
-
-- [x] 지킬 템플릿 작성
-- [x] 덧글 기능 추가
-- [x] 검색 기능 추가
-- [ ] 메모장 가동
 
 [github-pages]: https://pages.github.com
 [jekyll]: https://jekyllrb.com
 [giscus]: https://giscus.app
 [gpse]: https://programmablesearchengine.google.com
 [freesentation]: https://freesentation.blog
-[entry-posts]: https://github.com/oxmhpark/blog/tree/main/_entry_posts
+[entry-journals]: https://github.com/oxmhpark/blog/tree/main/_entry_journals
 [entry-pages]: https://github.com/oxmhpark/blog/tree/main/_entry_pages
 [entry-terms]: https://github.com/oxmhpark/blog/tree/main/_entry_terms
 [entry-bookmarks]: https://github.com/oxmhpark/blog/tree/main/_entry_bookmarks
 [archive-categories]: https://github.com/oxmhpark/blog/tree/main/_archive_categories
 [archive-tags]: https://github.com/oxmhpark/blog/tree/main/_archive_tags
 [archive-years]: https://github.com/oxmhpark/blog/tree/main/_archive_years
+[memo]: https://memo.nemorium.net/@oxmhpark
