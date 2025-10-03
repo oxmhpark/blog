@@ -6,4 +6,4 @@ meta: nil
 
 <!-- 최근 글 -->
 {% assign posts = site.entry_journals | sort: 'updated' | reverse | limit:7 %}
-{% include list-posts-item.html %}
+{% include list-posts.html %}
