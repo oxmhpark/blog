@@ -55,8 +55,8 @@ layout: raw
 {% endfor %}
 {% endif %}
 
-{% if site.entry_titles %}
-{% assign posts = site.entry_titles | sort: 'updated' | reverse %}
+{% if site.entry_texts %}
+{% assign posts = site.entry_texts | sort: 'updated' | reverse %}
 {% for post in posts %}
     <url>
         <loc>{{ post.url | prepend: site.url }}</loc>
