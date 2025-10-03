@@ -6,19 +6,6 @@
 # [x] 아카이브 제목 -- /archives.md
 # [x] 샘플 포스트 삭제 -- /_posts/2023-01-29-lorem-ipsum.md
 
-# 빌드 타겟
-exclude:
-  - blog.code-workspace
-  - _config.yml.sample
-  - .gitattributes
-  - .gitignore
-  - .hintrc
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - CNAME
-  - README.md
-
 # 운영자 정보
 author: "옥수박"
 
@@ -48,7 +35,54 @@ kramdown:
 sass:
   style: :expanded
 
-# 기본값
+
+
+# 아카이브 형식
+collections:
+  archive_categories:
+    output: true
+    path: _archive_categories
+    permalink: "categories/:slug"
+    layout: category
+  archive_tags:
+    output: true
+    path: _archive_tags
+    permalink: "tags/:slug"
+    layout: tag
+  archive_years:
+    output: true
+    path: _archive_years
+    permalink: "years/:slug"
+    layout: year
+  entry_journals:
+    output: true
+    path: _entry_journals
+    permalink: ":slug"
+    layout: post
+  entry_pages:
+    output: _entry_pages
+    path: _entry_pages
+    permalink: ":slug"
+    layout: page
+  entry_sites:
+    output: _entry_sites
+    path: _entry_sites
+    permalink: ":slug"
+    layout: page
+  entry_terms:
+    output: _entry_terms
+    path: _entry_terms
+    permalink: ":slug"
+    layout: page
+  entry_terms:
+    output: _entry_titles
+    path: _entry_titles
+    permalink: ":slug"
+    layout: page
+
+
+
+# 아카이브 프로퍼티
 defaults:
   -
     scope:
@@ -65,6 +99,27 @@ defaults:
         - tags
       read_more:
         label: "전문 읽기 &rarr;"
+  -
+    scope:
+      path: "_archive_categories"
+    values:
+      layout: "category"
+      meta:
+        - address
+  -
+    scope:
+      path: "_archive_tags"
+    values:
+      layout: "tag"
+      meta:
+        - address
+  -
+    scope:
+      path: "_archive_years"
+    values:
+      layout: "year"
+      meta:
+        - address
   -
     scope:
       path: "_entry_journals"
@@ -88,6 +143,15 @@ defaults:
         - lastmod
   -
     scope:
+      path: "_entry_sites"
+    values:
+      layout: "page"
+      meta:
+        - address
+      read_more:
+        label: "[메모]"
+  -
+    scope:
       path: "_entry_terms"
     values:
       layout: "page"
@@ -97,82 +161,36 @@ defaults:
         - lastmod
   -
     scope:
-      path: "_entry_bookmarks"
+      path: "_entry_titles"
     values:
       layout: "page"
       meta:
         - address
-      read_more:
-        label: "[메모]"
-  -
-    scope:
-      path: "_archive_years"
-    values:
-      layout: "year"
-      meta:
-        - address
-  -
-    scope:
-      path: "_archive_categories"
-    values:
-      layout: "category"
-      meta:
-        - address
-  -
-    scope:
-      path: "_archive_tags"
-    values:
-      layout: "tag"
-      meta:
-        - address
+        - date
+        - lastmod
 
-# 추가 형식
-collections:
-  posts:
-    output: false
-    path: _posts
-    permalink: ":slug"
-    layout: post
-  pages:
-    output: false
-    path: _pages
-    permalink: ":slug"
-    layout: page
-  entry_journals:
-    output: true
-    path: _entry_journals
-    permalink: ":slug"
-    layout: post
-  entry_pages:
-    output: _entry_pages
-    path: _entry_pages
-    permalink: ":slug"
-    layout: page
-  entry_terms:
-    output: _entry_terms
-    path: _entry_terms
-    permalink: ":slug"
-    layout: page
-  entry_bookmarks:
-    output: _entry_bookmarks
-    path: _entry_bookmarks
-    permalink: ":slug"
-    layout: page
-  archive_years:
-    output: true
-    path: _archive_years
-    permalink: "years/:slug"
-    layout: year
-  archive_categories:
-    output: true
-    path: _archive_categories
-    permalink: "categories/:slug"
-    layout: category
-  archive_tags:
-    output: true
-    path: _archive_tags
-    permalink: "tags/:slug"
-    layout: tag
+
+
+# 빌드 타겟
+exclude:
+  - blog.code-workspace
+  - _config.yml.sample
+  - .gitattributes
+  - .gitignore
+  - .hintrc
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - CNAME
+  - README.md
+  - _archive_categories/__TEMPLATE__.md
+  - _archive_tags/__TEMPLATE__.md
+  - _archive_years/__TEMPLATE__.md
+  - _entry_sites/__TEMPLATE__.md
+  - _entry_journals/__TEMPLATE__.md
+  - _entry_pages/__TEMPLATE__.md
+  - _entry_terms/__TEMPLATE__.md
+  - _entry_titles/__TEMPLATE__.md
 
 # 플러그인
 #plugins:
