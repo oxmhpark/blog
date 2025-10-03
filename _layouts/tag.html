@@ -8,6 +8,6 @@
 
 {% assign archiveName = post.title %}
 {% assign posts = site.entry_journals | where_exp: "post", "post.tags contains archiveName" | sort_natural: "date" | reverse %}
-{% include list-posts-item.html %}
+{% include list-posts.html %}
 
 {% include base-footer.html %}

@@ -8,6 +8,6 @@
 
 {% assign archiveName = post.title | to_i | plus: 0 %}
 {% assign posts = site.entry_journals | where_exp: "post", "post.years contains archiveName" | sort_natural: "date" | reverse %}
-{% include list-posts-item.html %}
+{% include list-posts.html %}
 
 {% include base-footer.html %}
