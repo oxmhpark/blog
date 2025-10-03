@@ -75,8 +75,8 @@ collections:
     permalink: ":slug"
     layout: page
   entry_terms:
-    output: _entry_titles
-    path: _entry_titles
+    output: _entry_texts
+    path: _entry_texts
     permalink: ":slug"
     layout: page
 
@@ -161,7 +161,7 @@ defaults:
         - lastmod
   -
     scope:
-      path: "_entry_titles"
+      path: "_entry_texts"
     values:
       layout: "page"
       meta:
