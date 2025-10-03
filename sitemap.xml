@@ -4,6 +4,7 @@ layout: raw
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+{% if site.entry_journals %}
 {% assign posts = site.entry_journals | sort: 'updated' | reverse %}
 {% for post in posts %}
     <url>
@@ -26,7 +27,9 @@ layout: raw
 		{% endif %}
     </url>
 {% endfor %}
+{% endif %}
 
+{% if site.entry_terms %}
 {% assign posts = site.entry_terms | sort: 'updated' | reverse %}
 {% for post in posts %}
     <url>
@@ -50,8 +53,9 @@ layout: raw
 		{% endif %}
     </url>
 {% endfor %}
-</urlset>
+{% endif %}
 
+{% if site.entry_titles %}
 {% assign posts = site.entry_titles | sort: 'updated' | reverse %}
 {% for post in posts %}
     <url>
@@ -75,4 +79,5 @@ layout: raw
 		{% endif %}
     </url>
 {% endfor %}
+{% endif %}
 </urlset>
