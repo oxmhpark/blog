@@ -7,7 +7,8 @@ meta: null
 # 「NEMORIUM.NET」은:
 
 - [옥수박]({{ site.data.links.oxmhpark-keyoxide }})이 메모를 정리하고 잡글을 쓰는 개인 블로그이다.
-- 답글은 늦거나 없을 수 있으며 광고·스팸·사생활 침해성 댓글은 통보 없이 삭제될 수 있다.[^com]
+- 답글은 늦거나 없을 수 있다.[^com]
+- 광고·스팸·사생활 침해성 댓글은 통보 없이 삭제될 수 있다.
 - [Jekyll]({{ site.data.links.jekyll }}) 형식으로 작성된다.
 - [Github Pages]({{ site.data.links.github-pages }})로 구동된다.
 - [giscus]({{ site.data.links.giscus }})로 덧글을 받는다.
