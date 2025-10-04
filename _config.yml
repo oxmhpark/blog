@@ -104,29 +104,25 @@ defaults:
       path: "_archive_categories"
     values:
       layout: "category"
-      meta:
-        - address
+      meta: nil
   -
     scope:
       path: "_archive_tags"
     values:
       layout: "tag"
-      meta:
-        - address
+      meta: nil
   -
     scope:
       path: "_archive_years"
     values:
       layout: "year"
-      meta:
-        - address
+      meta: nil
   -
     scope:
       path: "_entry_journals"
     values:
       layout: "post"
       meta:
-        - address
         - date
         - lastmod
         - years
@@ -138,7 +134,6 @@ defaults:
     values:
       layout: "page"
       meta:
-        - address
         - date
         - lastmod
   -
@@ -190,7 +185,7 @@ exclude:
   - _entry_journals/__TEMPLATE__.md
   - _entry_pages/__TEMPLATE__.md
   - _entry_terms/__TEMPLATE__.md
-  - _entry_titles/__TEMPLATE__.md
+  - _entry_texts/__TEMPLATE__.md
 
 # 플러그인
 #plugins:
