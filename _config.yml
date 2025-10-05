@@ -37,48 +37,40 @@ sass:
 
 
 
-# 아카이브 형식
+# 아카이브 정의
 collections:
   archive_categories:
     output: true
     path: _archive_categories
     permalink: "category/:slug"
-    layout: category
   archive_tags:
     output: true
     path: _archive_tags
     permalink: "tag/:slug"
-    layout: tag
   archive_years:
     output: true
     path: _archive_years
     permalink: "year/:slug"
-    layout: year
   entry_pages:
     output: _entry_pages
     path: _entry_pages
     permalink: ":slug"
-    layout: page
   entry_links:
     output: _entry_links
     path: _entry_links
     permalink: ":slug"
-    layout: link
   entry_terms:
     output: _entry_terms
     path: _entry_terms
     permalink: ":slug"
-    layout: term
   entry_reads:
     output: _entry_reads
     path: _entry_reads
     permalink: ":slug"
-    layout: read
   entry_writes:
     output: true
     path: _entry_writes
     permalink: ":slug"
-    layout: write
 
 
 
@@ -102,21 +94,25 @@ defaults:
     scope:
       path: "_archive_categories"
     values:
+      layout: category
       meta: nil
   -
     scope:
       path: "_archive_tags"
     values:
+      layout: tag
       meta: nil
   -
     scope:
       path: "_archive_years"
     values:
+      layout: year
       meta: nil
   -
     scope:
       path: "_entry_pages"
     values:
+      layout: page
       meta:
         - date
         - lastmod
@@ -124,6 +120,7 @@ defaults:
     scope:
       path: "_entry_links"
     values:
+      layout: link
       meta:
         - address
       read_more:
@@ -132,6 +129,7 @@ defaults:
     scope:
       path: "_entry_reads"
     values:
+      layout: read
       meta:
         - address
         - date
@@ -140,6 +138,7 @@ defaults:
     scope:
       path: "_entry_terms"
     values:
+      layout: term
       meta:
         - address
         - date
@@ -148,6 +147,7 @@ defaults:
     scope:
       path: "_entry_writes"
     values:
+      layout: write
       meta:
         - date
         - lastmod
