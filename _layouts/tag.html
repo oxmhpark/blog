@@ -13,11 +13,8 @@
 {% if writes == "" %}{% assign writes = "" | split: "" %}{% endif %}
 {% if reads == "" %}{% assign reads = "" | split: "" %}{% endif %}
 {% if terms == "" %}{% assign terms = "" | split: "" %}{% endif %}
-{% assign posts = writes | concat: reads | concat: terms | sort: "date" | reverse %}
+{% assign posts = writes | concat: reads | concat: terms %}
+{% assign posts = posts | sort: "updated" | reverse %}
 {% include list-posts.html %}
-
-{% assign posts = site.entry_links | where_exp: "post", "post.tags contains archiveName" | sort_natural: "slug" %}
-{% assign postsName = site.data.keywords.types.links %}
-{% include list-links.html %}
 
 {% include base-footer.html %}
