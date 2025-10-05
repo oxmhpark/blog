@@ -42,17 +42,17 @@ collections:
   archive_categories:
     output: true
     path: _archive_categories
-    permalink: "categories/:slug"
+    permalink: "category/:slug"
     layout: category
   archive_tags:
     output: true
     path: _archive_tags
-    permalink: "tags/:slug"
+    permalink: "tag/:slug"
     layout: tag
   archive_years:
     output: true
     path: _archive_years
-    permalink: "years/:slug"
+    permalink: "year/:slug"
     layout: year
   entry_journals:
     output: true
