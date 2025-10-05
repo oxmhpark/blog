@@ -18,7 +18,7 @@
 {% assign posts = site.entry_links | where_exp: "post", "post.categories contains archiveName" | sort_natural: "slug" %}
 {% if posts %}
 <h1>Bookmarks</h1>
-{% include list-sites.html %}
+{% include list-links.html %}
 {% endif %}
 
 {% include base-footer.html %}
