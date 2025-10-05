@@ -15,7 +15,7 @@
 {% endif %}
 
 {% assign archiveName = post.title %}
-{% assign posts = site.entry_sites | where_exp: "post", "post.tags contains archiveName" | sort_natural: "slug" %}
+{% assign posts = site.entry_links | where_exp: "post", "post.tags contains archiveName" | sort_natural: "slug" %}
 {% if posts %}
 <h1>Bookmarks</h1>
 {% include list-sites.html %}
