@@ -1,6 +1,6 @@
 .container {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: var(--width-frame);
   padding: 0 10px;
   width: 100%;
 }

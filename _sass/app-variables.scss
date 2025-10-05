@@ -18,6 +18,8 @@ $font-form: $font-sans-serif;
 $font-code: $font-monospace;
 
 :root {
+  --width-frame: 800px;
+
   // Markup Colors
   --color-link-default: #4183C4;
   --color-link-hover: #224499;
@@ -112,6 +114,12 @@ $font-code: $font-monospace;
 }
 
 // Responsives
+@mixin desktop {
+  @media screen and (min-width: 641px) {
+    @content;
+  }
+}
+
 @mixin mobile {
   @media screen and (max-width: 640px) {
     @content;

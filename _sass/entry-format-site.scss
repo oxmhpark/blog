@@ -1,12 +1,15 @@
 .entry {
   &.entry-format-site {
-    float: left;
-    width: 45%;
-    margin: 0;
-    padding: 2.5%;
 
-    &:nth-child(2n+1) {
-      clear: both;
+    @include desktop {
+      float: left;
+      width: 45%;
+      margin: 0;
+      padding: 2.5%;
+
+      &:nth-child(2n+1) {
+        clear: both;
+      }
     }
 
     .entry-title {
