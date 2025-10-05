@@ -3,10 +3,10 @@
     float: left;
     width: 45%;
     margin: 0;
-    padding: 0;
+    padding: 2.5%;
 
     &:nth-child(2n+1) {
-      padding: 2.5%;
+      clear: both;
     }
 
     .entry-title {
