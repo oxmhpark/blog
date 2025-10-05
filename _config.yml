@@ -144,7 +144,7 @@ defaults:
       meta:
         - address
       read_more:
-        label: "[메모]"
+        label: "[...]"
   -
     scope:
       path: "_entry_terms"
