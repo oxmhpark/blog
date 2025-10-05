@@ -59,13 +59,13 @@ collections:
     output: _entry_links
     path: _entry_links
     permalink: ":slug"
-  entry_terms:
-    output: _entry_terms
-    path: _entry_terms
-    permalink: ":slug"
   entry_reads:
     output: _entry_reads
     path: _entry_reads
+    permalink: ":slug"
+  entry_terms:
+    output: _entry_terms
+    path: _entry_terms
     permalink: ":slug"
   entry_writes:
     output: true
