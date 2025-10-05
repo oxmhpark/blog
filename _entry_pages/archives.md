@@ -9,8 +9,8 @@ meta: null
 <div class="archives archives-type-terms archives-type-categories">
     <h1>{{ site.data.keywords.archives.types }}</h1>
     <ul class="list-terms list-categories">
-        <li><a href="/writes">#{{ site.data.keywords.types.journals }}</a></li>
-        <li><a href="/reads">#{{ site.data.keywords.types.objects }}</a></li>
+        <li><a href="/writes">#{{ site.data.keywords.types.writes }}</a></li>
+        <li><a href="/reads">#{{ site.data.keywords.types.reads }}</a></li>
         <li><a href="/terms">#{{ site.data.keywords.types.terms }}</a></li>
     </ul>
 </div>

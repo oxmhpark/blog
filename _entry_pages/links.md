@@ -1,6 +1,6 @@
 ---
-title: "#즐겨찾기"
-slug: bookmarks
+title: "#링크"
+slug: links
 meta: null
 ---
 > 인터넷 주소를 모은다.

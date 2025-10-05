@@ -4,7 +4,7 @@ archives:
   tags: 소분류
   years: 연도
 types:
-  journals: 쓰기
   links: 링크
-  objects: 읽기
+  reads: 읽기
   terms: 알기
+  writes: 쓰기

@@ -54,11 +54,6 @@ collections:
     path: _archive_years
     permalink: "year/:slug"
     layout: year
-  entry_journals:
-    output: true
-    path: _entry_journals
-    permalink: ":slug"
-    layout: post
   entry_pages:
     output: _entry_pages
     path: _entry_pages
@@ -68,17 +63,22 @@ collections:
     output: _entry_links
     path: _entry_links
     permalink: ":slug"
-    layout: page
+    layout: link
   entry_terms:
     output: _entry_terms
     path: _entry_terms
     permalink: ":slug"
-    layout: page
-  entry_terms:
-    output: _entry_objects
-    path: _entry_objects
+    layout: term
+  entry_reads:
+    output: _entry_reads
+    path: _entry_reads
     permalink: ":slug"
-    layout: page
+    layout: read
+  entry_writes:
+    output: true
+    path: _entry_writes
+    permalink: ":slug"
+    layout: write
 
 
 
@@ -88,7 +88,6 @@ defaults:
     scope:
       path: "" # an empty string here means all files in the project
     values:
-      layout: "post"
       meta:
         - address
         - author
@@ -103,36 +102,21 @@ defaults:
     scope:
       path: "_archive_categories"
     values:
-      layout: "category"
       meta: nil
   -
     scope:
       path: "_archive_tags"
     values:
-      layout: "tag"
       meta: nil
   -
     scope:
       path: "_archive_years"
     values:
-      layout: "year"
       meta: nil
-  -
-    scope:
-      path: "_entry_journals"
-    values:
-      layout: "post"
-      meta:
-        - date
-        - lastmod
-        - years
-        - categories
-        - tags
   -
     scope:
       path: "_entry_pages"
     values:
-      layout: "page"
       meta:
         - date
         - lastmod
@@ -140,29 +124,36 @@ defaults:
     scope:
       path: "_entry_links"
     values:
-      layout: "page"
       meta:
         - address
       read_more:
         label: "[...]"
   -
     scope:
-      path: "_entry_terms"
+      path: "_entry_reads"
     values:
-      layout: "page"
       meta:
         - address
         - date
         - lastmod
   -
     scope:
-      path: "_entry_objects"
+      path: "_entry_terms"
     values:
-      layout: "page"
       meta:
         - address
         - date
         - lastmod
+  -
+    scope:
+      path: "_entry_writes"
+    values:
+      meta:
+        - date
+        - lastmod
+        - years
+        - categories
+        - tags
 
 
 
@@ -182,10 +173,10 @@ exclude:
   - _archive_tags/__TEMPLATE__.md
   - _archive_years/__TEMPLATE__.md
   - _entry_links/__TEMPLATE__.md
-  - _entry_journals/__TEMPLATE__.md
+  - _entry_writes/__TEMPLATE__.md
   - _entry_pages/__TEMPLATE__.md
   - _entry_terms/__TEMPLATE__.md
-  - _entry_objects/__TEMPLATE__.md
+  - _entry_reads/__TEMPLATE__.md
 
 # 플러그인
 #plugins:

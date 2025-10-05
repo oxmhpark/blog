@@ -7,13 +7,13 @@
 {% include post-format-fulltext.html %}
 
 {% assign archiveName = post.title %}
-{% assign journals = site.entry_journals | where_exp: "post", "post.tags contains archiveName" | default: "" %}
-{% assign objects = site.entry_objects | where_exp: "post", "post.tags contains archiveName" | default: "" %}
+{% assign writes = site.entry_writes | where_exp: "post", "post.tags contains archiveName" | default: "" %}
+{% assign reads = site.entry_reads | where_exp: "post", "post.tags contains archiveName" | default: "" %}
 {% assign terms = site.entry_terms | where_exp: "post", "post.tags contains archiveName" | default: "" %}
-{% if journals == "" %}{% assign journals = "" | split: "" %}{% endif %}
-{% if objects == "" %}{% assign objects = "" | split: "" %}{% endif %}
+{% if writes == "" %}{% assign writes = "" | split: "" %}{% endif %}
+{% if reads == "" %}{% assign reads = "" | split: "" %}{% endif %}
 {% if terms == "" %}{% assign terms = "" | split: "" %}{% endif %}
-{% assign posts = journals | concat: objects | concat: terms | sort: "date" | reverse %}
+{% assign posts = writes | concat: reads | concat: terms | sort: "date" | reverse %}
 {% include list-posts.html %}
 
 {% assign posts = site.entry_links | where_exp: "post", "post.tags contains archiveName" | sort_natural: "slug" %}
