@@ -9,11 +9,6 @@
   class: ""
   icon: ""
 -
-  name: "#링크"
-  url: "/links"
-  class: ""
-  icon: ""
--
   name: "#소개"
   url: "/about"
   class: ""
