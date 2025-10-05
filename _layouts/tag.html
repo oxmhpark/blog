@@ -7,11 +7,11 @@
 {% include post-format-fulltext.html %}
 
 {% assign archiveName = post.title %}
-
-{% assign posts1 = site.entry_journals | where_exp: "post", "post.tags contains archiveName" %}
-{% assign posts2 = site.entry_objects | where_exp: "post", "post.tags contains archiveName" %}
-{% assign posts3 = site.entry_terms | where_exp: "post", "post.tags contains archiveName" %}
-{% assign posts = posts1 | concat: posts2 | concat: posts3 | sort_natural: "date" | reverse %}
+{% assign posts = '' %}
+{% for journal in site.entry_journals | where_exp: "post", "post.tags contains archiveName" %}{% assign posts = posts | append: journal %}{% endfor %}
+{% for object in site.entry_objects | where_exp: "post", "post.tags contains archiveName" %}{% assign posts = posts | append: object %}{% endfor %}
+{% for term in site.entry_terms | where_exp: "post", "post.tags contains archiveName" %}{% assign posts = posts | append: term %}{% endfor %}
+{% assign posts = posts | sort_natural: "date" | reverse %}
 {% include list-posts.html %}
 
 {% assign posts = site.entry_links | where_exp: "post", "post.tags contains archiveName" | sort_natural: "slug" %}
