@@ -1,5 +1,14 @@
 .entry {
-  &.entry-format-bookmark {
+  &.entry-format-site {
+    float: left;
+    width: 45%;
+    margin: 0;
+    padding: 0;
+
+    &:nth-child(2n+1) {
+      padding: 2.5%;
+    }
+
     .entry-title {
       display: inline;
     }
