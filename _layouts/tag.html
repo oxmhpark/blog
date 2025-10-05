@@ -8,16 +8,10 @@
 
 {% assign archiveName = post.title %}
 
-{% assign posts = site.entry_journals | where_exp: "post", "post.tags contains archiveName" | sort_natural: "date" | reverse %}
-{% assign postsName = site.data.keywords.journals %}
-{% include list-posts.html %}
-
-{% assign posts = site.entry_objects | where_exp: "post", "post.tags contains archiveName" | sort_natural: "date" | reverse %}
-{% assign postsName = site.data.keywords.objects %}
-{% include list-posts.html %}
-
-{% assign posts = site.entry_terms | where_exp: "post", "post.tags contains archiveName" | sort_natural: "date" | reverse %}
-{% assign postsName = site.data.keywords.terms %}
+{% assign posts1 = site.entry_journals | where_exp: "post", "post.tags contains archiveName" %}
+{% assign posts2 = site.entry_objects | where_exp: "post", "post.tags contains archiveName" %}
+{% assign posts3 = site.entry_terms | where_exp: "post", "post.tags contains archiveName" %}
+{% assign posts = posts1 | concat: posts2 | concat: posts3 | sort_natural: "date" | reverse %}
 {% include list-posts.html %}
 
 {% assign posts = site.entry_links | where_exp: "post", "post.tags contains archiveName" | sort_natural: "slug" %}
