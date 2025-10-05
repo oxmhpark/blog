@@ -7,9 +7,12 @@
 {% include post-format-fulltext.html %}
 
 {% assign archiveName = post.title %}
-{% assign journals = site.entry_journals | where_exp: "post", "post.categories contains archiveName" %}
-{% assign objects = site.entry_objects | where_exp: "post", "post.categories contains archiveName" %}
-{% assign terms = site.entry_terms | where_exp: "post", "post.categories contains archiveName" %}
+{% assign journals = site.entry_journals | where_exp: "post", "post.categories contains archiveName" | default: "" %}
+{% assign objects = site.entry_objects | where_exp: "post", "post.categories contains archiveName" | default: "" %}
+{% assign terms = site.entry_terms | where_exp: "post", "post.categories contains archiveName" | default: "" %}
+{% if journals == "" %}{% assign journals = "" | split: "" %}{% endif %}
+{% if objects == "" %}{% assign objects = "" | split: "" %}{% endif %}
+{% if terms == "" %}{% assign terms = "" | split: "" %}{% endif %}
 {% assign posts = journals | concat: objects | concat: terms | sort_natural: "date" | reverse %}
 {% include list-posts.html %}
 
