@@ -75,8 +75,8 @@ collections:
     permalink: ":slug"
     layout: page
   entry_terms:
-    output: _entry_texts
-    path: _entry_texts
+    output: _entry_objects
+    path: _entry_objects
     permalink: ":slug"
     layout: page
 
@@ -156,7 +156,7 @@ defaults:
         - lastmod
   -
     scope:
-      path: "_entry_texts"
+      path: "_entry_objects"
     values:
       layout: "page"
       meta:
@@ -185,7 +185,7 @@ exclude:
   - _entry_journals/__TEMPLATE__.md
   - _entry_pages/__TEMPLATE__.md
   - _entry_terms/__TEMPLATE__.md
-  - _entry_texts/__TEMPLATE__.md
+  - _entry_objects/__TEMPLATE__.md
 
 # 플러그인
 #plugins:

@@ -12,7 +12,14 @@
 {% assign postsName = site.data.keywords.journals %}
 {% include list-posts.html %}
 
-{% assign archiveName = post.title %}
+{% assign posts = site.entry_objects | where_exp: "post", "post.tags contains archiveName" | sort_natural: "date" | reverse %}
+{% assign postsName = site.data.keywords.objects %}
+{% include list-posts.html %}
+
+{% assign posts = site.entry_terms | where_exp: "post", "post.tags contains archiveName" | sort_natural: "date" | reverse %}
+{% assign postsName = site.data.keywords.terms %}
+{% include list-posts.html %}
+
 {% assign posts = site.entry_links | where_exp: "post", "post.tags contains archiveName" | sort_natural: "slug" %}
 {% assign postsName = site.data.keywords.links %}
 {% include list-links.html %}
