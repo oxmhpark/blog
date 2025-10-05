@@ -21,13 +21,15 @@
     }
 
     @include desktop {
-      float: left;
-      width: 45%;
+      width: 47.5%;
       margin: 0 0 5% 0;
 
+      &:nth-child(2n+0) {
+        float: left;
+      }
+
       &:nth-child(2n+1) {
-        clear: both;
-        margin-right: 5%;
+        float: right;
       }
 
       .entry-title img {
