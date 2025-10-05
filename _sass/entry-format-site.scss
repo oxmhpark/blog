@@ -1,17 +1,5 @@
 .entry {
   &.entry-format-site {
-
-    @include desktop {
-      float: left;
-      width: 45%;
-      margin: 0 0 5% 0;
-
-      &:nth-child(2n+1) {
-        clear: both;
-        margin-right: 5%;
-      }
-    }
-
     .entry-title {
       display: inline;
     }
@@ -30,6 +18,22 @@
 
     .entry-meta {
       display: none;
+    }
+
+    @include desktop {
+      float: left;
+      width: 45%;
+      margin: 0 0 5% 0;
+
+      &:nth-child(2n+1) {
+        clear: both;
+        margin-right: 5%;
+      }
+
+      .entry-title img {
+        width: 100%;
+        display: block;
+      }
     }
   }
 }
