@@ -10,5 +10,3 @@ Gemfile.lock
 .localhost.log
 .localhost.pid
 /.obsidian
-/__TEMPLATES__
-_*.md
