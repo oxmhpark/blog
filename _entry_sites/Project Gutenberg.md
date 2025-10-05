@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: "Project Gutenberg"
 slug: "project-gutenberg"
 address: https://www.gutenberg.org/
