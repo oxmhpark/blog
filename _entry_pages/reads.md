@@ -7,5 +7,5 @@ meta: null
 
 {% assign posts = site.entry_objects | default "" %}
 {% if posts == "" %}{% assign posts = "" | split: "" %}{% endif %}
-{% assign posts = posts | sort: "date" | reverse %}
+{% assign posts = posts | sort: "updated" | reverse %}
 {% include list-posts.html %}

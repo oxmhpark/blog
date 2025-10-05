@@ -13,7 +13,8 @@
 {% if journals == "" %}{% assign journals = "" | split: "" %}{% endif %}
 {% if objects == "" %}{% assign objects = "" | split: "" %}{% endif %}
 {% if terms == "" %}{% assign terms = "" | split: "" %}{% endif %}
-{% assign posts = journals | concat: objects | concat: terms | sort: "date" | reverse %}
+{% assign posts = journals | concat: objects | concat: terms %}
+{% assign posts = posts | sort: "updated" | reverse %}
 {% include list-posts.html %}
 
 {% include base-footer.html %}

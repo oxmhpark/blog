@@ -1,11 +1,16 @@
 ---
 layout: raw
 ---
+{% assign journals = site.entry_journals | default "" %}
+{% assign objects = site.entry_objects | default "" %}
+{% assign terms = site.entry_terms | default "" %}
+{% if journals == "" %}{% assign journals = "" | split: "" %}{% endif %}
+{% if objects == "" %}{% assign objects = "" | split: "" %}{% endif %}
+{% if terms == "" %}{% assign terms = "" | split: "" %}{% endif %}
+{% assign posts = journals | concat: objects | concat: terms %}
+{% assign posts = posts | sort: "updated" | reverse %}
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-{% if site.entry_journals %}
-{% assign posts = site.entry_journals | sort: 'updated' | reverse %}
 {% for post in posts %}
     <url>
         <loc>{{ post.url | prepend: site.url }}</loc>
@@ -27,57 +32,4 @@ layout: raw
 		{% endif %}
     </url>
 {% endfor %}
-{% endif %}
-
-{% if site.entry_terms %}
-{% assign posts = site.entry_terms | sort: 'updated' | reverse %}
-{% for post in posts %}
-    <url>
-        <loc>{{ post.url | prepend: site.url }}</loc>
-		{% if post.updated == null %}
-		<lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-		{% else %}
-		<lastmod>{{ post.updated | date_to_xmlschema }}</lastmod>
-		{% endif %}
-
-		{% if post.sitemap.changefreq == null %}
-		<changefreq>daily</changefreq>
-		{% else %}
-		<changefreq>{{ post.sitemap.changefreq }}</changefreq>
-		{% endif %}
-
-		{% if post.sitemap.priority == null %}
-		<priority>0.5</priority>
-		{% else %}
-		<priority>{{ post.sitemap.priority }}</priority>
-		{% endif %}
-    </url>
-{% endfor %}
-{% endif %}
-
-{% if site.entry_texts %}
-{% assign posts = site.entry_texts | sort: 'updated' | reverse %}
-{% for post in posts %}
-    <url>
-        <loc>{{ post.url | prepend: site.url }}</loc>
-		{% if post.updated == null %}
-		<lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-		{% else %}
-		<lastmod>{{ post.updated | date_to_xmlschema }}</lastmod>
-		{% endif %}
-
-		{% if post.sitemap.changefreq == null %}
-		<changefreq>daily</changefreq>
-		{% else %}
-		<changefreq>{{ post.sitemap.changefreq }}</changefreq>
-		{% endif %}
-
-		{% if post.sitemap.priority == null %}
-		<priority>0.5</priority>
-		{% else %}
-		<priority>{{ post.sitemap.priority }}</priority>
-		{% endif %}
-    </url>
-{% endfor %}
-{% endif %}
 </urlset>

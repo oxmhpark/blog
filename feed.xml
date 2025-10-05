@@ -1,6 +1,14 @@
 ---
 layout: raw
 ---
+{% assign journals = site.entry_journals | limit:7 | default "" %}
+{% assign objects = site.entry_objects | limit:7 | default "" %}
+{% assign terms = site.entry_terms | limit:7 | default "" %}
+{% if journals == "" %}{% assign journals = "" | split: "" %}{% endif %}
+{% if objects == "" %}{% assign objects = "" | split: "" %}{% endif %}
+{% if terms == "" %}{% assign terms = "" | split: "" %}{% endif %}
+{% assign posts = journals | concat: objects | concat: terms %}
+{% assign posts = posts | sort: "updated" | reverse %}
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
@@ -11,7 +19,6 @@ layout: raw
 		<pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 		<generator>Jekyll v{{ jekyll.version }}</generator>
-		{% assign posts = site.entry_journals | sort: 'updated' | reverse %}
 		{% for post in posts limit: 100 %}
 		<item>
 			<title>{{ post.title | xml_escape }}</title>
