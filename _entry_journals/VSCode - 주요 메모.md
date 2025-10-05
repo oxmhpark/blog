@@ -7,7 +7,7 @@ lastmod: null
 years:
   - 2025
 categories:
-  - 개발 노트
+  - 개발
 tags:
   - VSCode
   - IDE

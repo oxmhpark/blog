@@ -7,7 +7,18 @@
 {% include post-format-fulltext.html %}
 
 {% assign archiveName = post.title %}
+
 {% assign posts = site.entry_journals | where_exp: "post", "post.tags contains archiveName" | sort_natural: "date" | reverse %}
+{% if posts %}
+<h1>Journals</h1>
 {% include list-posts.html %}
+{% endif %}
+
+{% assign archiveName = post.title %}
+{% assign posts = site.entry_sites | where_exp: "post", "post.tags contains archiveName" | sort_natural: "slug" %}
+{% if posts %}
+<h1>Bookmarks</h1>
+{% include list-sites.html %}
+{% endif %}
 
 {% include base-footer.html %}

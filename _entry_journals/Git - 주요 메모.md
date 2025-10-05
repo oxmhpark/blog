@@ -7,7 +7,7 @@ date: 2025-03-27 03:14:09 +0900
 years:
   - 2025
 categories:
-  - 개발 노트
+  - 개발
 tags:
   - Git
   - VCS

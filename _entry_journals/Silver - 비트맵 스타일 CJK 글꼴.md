@@ -6,7 +6,7 @@ date: 2025-02-21 00:00:00 +0900
 years:
   - 2025
 categories:
-  - 개발 노트
+  - 개발
 tags:
   - Font
   - Unity Engine

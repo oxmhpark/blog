@@ -1,7 +1,8 @@
 ---
-published: true
-title: "국가자료공동목록"
-slug: "kolis"
+title: 국가자료공동목록
+slug: nl.go.kr-kolisnet
 address: https://www.nl.go.kr/kolisnet/
+categories:
+  - 독서
 ---
 공공도서관 자료를 한자리에서 검색할 수 있는 국립중앙도서관 산하 프로젝트.
