@@ -4,11 +4,11 @@
     @include desktop {
       float: left;
       width: 45%;
-      margin: 0;
-      padding: 2.5%;
+      margin: 0 0 5% 0;
 
       &:nth-child(2n+1) {
         clear: both;
+        margin-right: 5%;
       }
     }
 
