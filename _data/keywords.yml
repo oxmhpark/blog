@@ -2,8 +2,9 @@ archives:
   types: 대분류
   categories: 중분류
   tags: 소분류
+  years: 연도
 types:
-  journals: 일지
+  journals: 읽기
   links: 링크
-  objects: 정보
-  terms: 단어장
+  objects: 쓰기
+  terms: 알기
