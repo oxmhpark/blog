@@ -1,5 +1,5 @@
 ---
-title: "#링크"
+title: "#참조"
 slug: links
 meta: null
 ---
