@@ -13,11 +13,11 @@
 {% if journals == "" %}{% assign journals = "" | split: "" %}{% endif %}
 {% if objects == "" %}{% assign objects = "" | split: "" %}{% endif %}
 {% if terms == "" %}{% assign terms = "" | split: "" %}{% endif %}
-{% assign posts = journals | concat: objects | concat: terms | sort_natural: "date" | reverse %}
+{% assign posts = journals | concat: objects | concat: terms | sort: "date" | reverse %}
 {% include list-posts.html %}
 
 {% assign posts = site.entry_links | where_exp: "post", "post.tags contains archiveName" | sort_natural: "slug" %}
-{% assign postsName = site.data.keywords.links %}
+{% assign postsName = site.data.keywords.types.links %}
 {% include list-links.html %}
 
 {% include base-footer.html %}

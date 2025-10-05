@@ -3,5 +3,7 @@ title: "#즐겨찾기"
 slug: bookmarks
 meta: null
 ---
+> 인터넷 주소를 모은다.
+
 {% assign posts = site.entry_links | sort_natural: "title" %}
 {% include list-links.html %}
