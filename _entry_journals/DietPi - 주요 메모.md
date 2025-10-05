@@ -10,7 +10,7 @@ years:
   - 2025
 categories:
   - 개발
-  - 시설 관리
+  - 관리
 tags:
   - DietPi
   - Linux
