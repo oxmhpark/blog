@@ -11,7 +11,7 @@ categories:
 tags:
   - VSCode
   - IDE
-  - Cheatsheet
+  - 치트시트
 excerpt: "사용자 확장 / 기타"
 ---
 # 사용자 확장

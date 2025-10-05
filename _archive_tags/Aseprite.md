@@ -1,4 +1,0 @@
----
-title: Aseprite
-slug: aseprite
----

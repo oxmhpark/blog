@@ -9,9 +9,9 @@ years:
 categories:
   - 개발
 tags:
-  - Git
+  - 깃
   - VCS
-  - Cheatsheet
+  - 치트시트
 ---
 # 주요 명령어
 

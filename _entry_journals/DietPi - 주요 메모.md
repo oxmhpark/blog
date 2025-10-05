@@ -1,6 +1,6 @@
 ---
 published: false
-title: "DietPi: 주요 메모"
+title: "다이어트파이: 주요 메모"
 subtitle: ""
 ruby: ""
 slug: "dietpi-cheatsheet"
@@ -12,9 +12,9 @@ categories:
   - 개발
   - 관리
 tags:
-  - DietPi
-  - Linux
-  - OS
-  - Cheatsheet
+  - 다이어트 파이
+  - 리눅스
+  - 운영체제
+  - 치트시트
 excerpt: "파일 탐색 / 파일 편집 / 설치 및 삭제 / 인터넷 / 원격접속 / 외장 디스크 / "
 ---

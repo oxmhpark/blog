@@ -1,4 +1,0 @@
----
-title: Mirror
-slug: mirror
----

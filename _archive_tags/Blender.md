@@ -1,4 +1,0 @@
----
-title: Blender
-slug: blender
----

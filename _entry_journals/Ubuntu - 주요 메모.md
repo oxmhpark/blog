@@ -12,9 +12,9 @@ categories:
   - 개발
   - 관리
 tags:
-  - Ubuntu
-  - Linux
-  - OS
-  - Cheatsheet
+  - 우분투
+  - 리눅스
+  - 운영체제
+  - 치트시트
 excerpt: "파일 탐색 / 파일 편집 / 설치 및 삭제 / 인터넷 / 원격접속 / 외장 디스크 / "
 ---
