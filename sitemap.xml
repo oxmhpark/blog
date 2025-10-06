@@ -1,6 +1,7 @@
 ---
 layout: raw
 ---
+<?xml version="1.0" encoding="UTF-8"?>
 {% assign writes = site.entry_writes | default "" %}
 {% assign reads = site.entry_reads | default "" %}
 {% assign terms = site.entry_terms | default "" %}
@@ -9,7 +10,6 @@ layout: raw
 {% if terms == "" %}{% assign terms = "" | split: "" %}{% endif %}
 {% assign posts = writes | concat: reads | concat: terms %}
 {% assign posts = posts | sort: "updated" | reverse %}
-<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {% for post in posts %}
     <url>

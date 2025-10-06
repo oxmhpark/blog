@@ -1,6 +1,7 @@
 ---
 layout: raw
 ---
+<?xml version="1.0" encoding="UTF-8"?>
 {% assign writes = site.entry_writes | limit:7 | default "" %}
 {% assign reads = site.entry_reads | limit:7 | default "" %}
 {% assign terms = site.entry_terms | limit:7 | default "" %}
@@ -9,7 +10,6 @@ layout: raw
 {% if terms == "" %}{% assign terms = "" | split: "" %}{% endif %}
 {% assign posts = writes | concat: reads | concat: terms %}
 {% assign posts = posts | sort: "updated" | reverse %}
-<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>{{ site.title | xml_escape }}</title>
