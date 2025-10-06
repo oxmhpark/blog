@@ -9,8 +9,8 @@ lastmod: 2025-02-21 00:00:00 +0900
 years:
   - 2025
 categories:
-  - 개발
+  - 미분류
 tags:
-  - 글꼴
+  - 잡학
 excerpt: "Sample excerpt"
 ---

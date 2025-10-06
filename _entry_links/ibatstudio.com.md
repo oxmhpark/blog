@@ -3,5 +3,8 @@ title: BatStudio
 slug: ibatstudio.com
 address: https://ibatstudio.com/
 categories:
-  - 개발
+  - 게임 개발
+tags:
+  - 게임 엔진
+  - 프로그래밍 언어
 ---

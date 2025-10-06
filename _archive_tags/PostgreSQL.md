@@ -1,4 +1,0 @@
----
-title: PostgreSQL
-slug: postgresql
----

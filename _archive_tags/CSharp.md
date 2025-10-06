@@ -1,4 +1,0 @@
----
-title: CSharp
-slug: csharp
----

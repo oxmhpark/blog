@@ -1,9 +1,12 @@
 ---
-title: capcold 님의 블로그 님
+title: 캡콜드 님의 블로그 님
 slug: capcold.net
 address: https://capcold.net/
 categories:
-  - 독서
-  - 코멘트
+  - 책읽기
+tags:
+  - 장르
+  - 사회과학
+  - 언론
 ---
-만화·시사 평론가 김낙호 님의 홈페이지.
+만화·시사 평론가 김낙호 님 홈페이지.
