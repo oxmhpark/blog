@@ -7,10 +7,9 @@ lastmod: null
 years:
   - 2025
 categories:
-  - 개발
+  - 게임 개발
+  - 도메인 관리
 tags:
-  - VSCode
-  - IDE
   - 치트시트
 excerpt: "사용자 확장 / 기타"
 ---
