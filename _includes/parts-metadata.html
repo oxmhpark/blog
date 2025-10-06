@@ -2,6 +2,7 @@
 	{% if post.meta and post.meta contains 'address' and post.address %}<p class="entry-address"><a href="{{ post.address }}">{{ post.address }}</a></p>{% endif %}
 	{% if post.meta and post.meta contains 'date' %}<p class="entry-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.format.date }}</p>{% endif %}
 	{% if post.meta and post.meta contains 'lastmod' and post.lastmod %}<p class="entry-date entry-date-modified" datetime="{{ post.lastmod | date_to_xmlschema }}">(Updated: {{ post.lastmod | date: site.format.date }})</p>{% endif %}
+
 	{% if post.meta and post.meta contains 'years' and post.years %}
 	<ul class="entry-terms entry-years">
 		{% for year in post.years %}
@@ -9,6 +10,7 @@
 		{% endfor %}
 	</ul>
 	{% endif %}
+
 	{% if post.meta and post.meta contains 'categories' and post.categories %}
 	<ul class="entry-terms entry-categories">
 		{% for category in post.categories %}
@@ -16,10 +18,19 @@
 		{% endfor %}
 	</ul>
 	{% endif %}
+
 	{% if post.meta and post.meta contains 'tags' and post.tags %}
 	<ul class="entry-terms entry-tags">
 		{% for tag in post.tags %}
 		<li><a href="/tag/{{ tag | slugify }}">{{ tag }}</a></li>
+		{% endfor %}
+	</ul>
+	{% endif %}
+
+	{% if post.meta and post.meta contains 'links' and post.links %}
+	<ul class="entry-terms entry-links">
+		{% for link in post.links %}
+		<li><a href="/{{ link | slugify }}">{{ link }}</a></li>
 		{% endfor %}
 	</ul>
 	{% endif %}

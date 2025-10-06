@@ -7,4 +7,15 @@
 {% include post-format-fulltext.html %}
 {% include component-comments.html %}
 
+{% assign archiveName = post.title %}
+{% assign writes = site.entry_writes | where_exp: "post", "post.links contains archiveName" | default: "" %}
+{% assign reads = site.entry_reads | where_exp: "post", "post.links contains archiveName" | default: "" %}
+{% assign terms = site.entry_terms | where_exp: "post", "post.links contains archiveName" | default: "" %}
+{% if writes == "" %}{% assign writes = "" | split: "" %}{% endif %}
+{% if reads == "" %}{% assign reads = "" | split: "" %}{% endif %}
+{% if terms == "" %}{% assign terms = "" | split: "" %}{% endif %}
+{% assign posts = writes | concat: reads | concat: terms %}
+{% assign posts = posts | sort: "updated" | reverse %}
+{% include list-posts.html %}
+
 {% include base-footer.html %}

@@ -6,10 +6,13 @@ date: 2025-04-04 10:34:25 +0900
 lastmod: null
 years:
   - 2025
+links:
+  - Visual Studio Code
 categories:
   - 게임 개발
   - 도메인 관리
 tags:
+  - 통합 개발 환경
   - 치트시트
 excerpt: "사용자 확장 / 기타"
 ---

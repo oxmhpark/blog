@@ -136,6 +136,7 @@ defaults:
         - years
         - categories
         - tags
+        - links
   -
     scope:
       path: "_entry_terms"
@@ -147,6 +148,7 @@ defaults:
         - years
         - categories
         - tags
+        - links
   -
     scope:
       path: "_entry_writes"
@@ -158,6 +160,7 @@ defaults:
         - years
         - categories
         - tags
+        - links
 
 
 
