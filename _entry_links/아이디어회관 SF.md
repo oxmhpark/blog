@@ -1,6 +1,6 @@
 ---
 title: 아이디어회관 SF
-slug: sf.jikji.org
+slug: 아이디어회관-SF
 address: https://sf.jikji.org/
 categories:
   - 책읽기

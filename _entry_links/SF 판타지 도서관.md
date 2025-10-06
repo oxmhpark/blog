@@ -1,6 +1,6 @@
 ---
 title: SF & 판타지 도서관
-slug: sflib.com
+slug: SF-판타지-도서관
 address: http://sflib.com/
 categories:
   - 책읽기

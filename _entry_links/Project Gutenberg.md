@@ -1,6 +1,6 @@
 ---
 title: Project Gutenberg
-slug: gutenberg.org
+slug: project-gutenberg
 address: https://www.gutenberg.org/
 categories:
   - 책읽기
