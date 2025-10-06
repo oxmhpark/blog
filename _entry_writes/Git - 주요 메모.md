@@ -1,5 +1,4 @@
 ---
-published: true
 title: "Git: 주요 메모"
 slug: "git-cheatsheet"
 excerpt: "저장소 관리 / 브랜치 관리 / 커밋·푸쉬 / 병합 / 기타"
