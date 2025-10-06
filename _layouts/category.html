@@ -17,4 +17,8 @@
 {% assign posts = posts | sort: "updated" | reverse %}
 {% include list-posts.html %}
 
+{% assign posts = site.entry_links | where_exp: "post", "post.categories contains archiveName" | default: "" %}
+{% assign posts = posts | sort: "title" %}
+{% include list-links.html %}
+
 {% include base-footer.html %}

@@ -131,18 +131,22 @@ defaults:
     values:
       layout: read
       meta:
-        - address
         - date
         - lastmod
+        - years
+        - categories
+        - tags
   -
     scope:
       path: "_entry_terms"
     values:
       layout: term
       meta:
-        - address
         - date
         - lastmod
+        - years
+        - categories
+        - tags
   -
     scope:
       path: "_entry_writes"
