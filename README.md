@@ -13,14 +13,14 @@ NEMORIUM.NET
 
 # 형식규정
 
-- [`archive_categories`][archive-categories]: 게시물이 속한 프로젝트.
-- [`archive_tags`][archive-tags]: 게시물이 다루는 소재.
-- [`archive_years`][archive-years]: 게시물이 소속된 연도. 여러 해에 걸칠 수 있다.
-- [`entry_links`][entry-links]: 대상 홈페이지, 위키백과 개별 항목, 검색 쿼리 등.
-- [`entry_pages`][entry-pages]: 고정 페이지; 관리 목적이 아니라면 생성할 일이 없을 것이다.
-- [`entry_reads`][entry-reads]: 책을 읽거나 영화·음악을 감상한 뒤에 남기는 글.
-- [`entry_terms`][entry-terms]: 주제를 정해서 조사한 내용을 정리하는 글.
-- [`entry_writes`][entry-journals]: 직접 작성한 글.
+- [`archive_categories`][archive-categories]: 프로젝트.
+- [`archive_tags`][archive-tags]: 구체적인 소재; '인물'은 부적절하고, '시로 마사무네'는 적절하다.
+- [`archive_years`][archive-years]: 해당 연도. 여러 해에 걸칠 수 있다.
+- [`entry_pages`][entry-pages]: 고정 페이지; 관리 목적이 아니라면 추가할 일이 없을 것이다.
+- [`entry_links`][entry-links]: 보존할 인터넷 주소들; 홈페이지, 위키 항목, 검색 쿼리 등.
+- [`entry_reads`][entry-reads]: 텍스트 요약·평가; 읽고 보고 들은 것들.
+- [`entry_terms`][entry-terms]: 주제를 정해서 조사한 내용들.
+- [`entry_writes`][entry-writes]: 스스로 의도·설계·작성한 글.
 
 # 운영방침
 
