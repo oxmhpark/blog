@@ -11,6 +11,5 @@ years:
 categories:
   - 장르읽기
 tags:
-  - 소설
 excerpt: "Sample excerpt"
 ---
