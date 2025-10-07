@@ -5,6 +5,6 @@ address: https://www.mp3tag.de/
 tags:
   - 정보통신
   - 음악
-  - 메타 정보
+  - 메타 데이터
   - 편집기
 ---
