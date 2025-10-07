@@ -8,6 +8,5 @@ tags:
   - 정보통신
   - 문자
   - 전산화
-  - 자료
 ---
 Basic Multilingual Plane을 지원하는 비트맵 스타일 글꼴.
