@@ -2,8 +2,6 @@
 title: Project Gutenberg
 slug: project-gutenberg
 address: https://www.gutenberg.org/
-categories:
-  - 책읽기
 tags:
   - 전자책
   - 자료

@@ -2,9 +2,8 @@
 title: James Gurney
 slug: jamesgurney.com
 address: https://jamesgurney.com/
-categories:
-  - 만화창작
 tags:
+  - 인물
   - 작가
   - 미술
 ---

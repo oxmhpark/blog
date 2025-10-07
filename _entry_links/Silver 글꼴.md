@@ -3,8 +3,9 @@ title: Silver 글꼴
 slug: silver-글꼴
 address: https://poppyworks.itch.io/silver
 categories:
-  - 게임 개발
+  - 개발일지
 tags:
+  - 정보통신
   - 문자
   - 전산화
   - 자료

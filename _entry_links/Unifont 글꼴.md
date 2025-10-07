@@ -5,6 +5,7 @@ address: https://unifoundry.com/unifont/index.html
 categories:
   - 게임 개발
 tags:
+  - 정보통신
   - 문자
   - 전산화
   - 자료

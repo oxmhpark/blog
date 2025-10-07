@@ -3,8 +3,9 @@ title: Git
 slug: git
 address: https://git-scm.com/
 categories:
-  - 게임 개발
+  - 개발일지
   - 도메인 관리
 tags:
+  - 정보통신
   - 버전 관리 도구
 ---
