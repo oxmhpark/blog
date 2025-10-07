@@ -3,7 +3,7 @@ title: 아이디어회관 SF
 slug: 아이디어회관-SF
 address: https://sf.jikji.org/
 categories:
-  - 장르 읽기
+  - 장르읽기
 tags:
   - 전자책
   - 소설

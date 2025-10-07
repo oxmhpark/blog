@@ -3,7 +3,7 @@ title: SF & 판타지 데이터베이스
 slug: SF-판타지-데이터베이스
 address: http://sflib.com/
 categories:
-  - 장르 읽기
+  - 장르읽기
 tags:
   - 소설
   - 만화
