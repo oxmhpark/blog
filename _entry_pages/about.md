@@ -11,7 +11,7 @@ meta: null
 - 광고·스팸·사생활 침해성 댓글은 통보 없이 삭제될 수 있다.
 - [Jekyll]({{ site.data.links.jekyll }}) 형식으로 작성된다.
 - [Github Pages]({{ site.data.links.github-pages }})로 구동된다.
-- [giscus]({{ site.data.links.giscus }})로 덧글을 받는다.
+- [giscus]({{ site.data.links.giscus }})로 댓글을 받는다.
 - [Google Programmable Search Engine]({{ site.data.links.gpse }})으로 검색을 지원한다.
 - [Freesentation]({{ site.data.links.freesentation }})을 이용해서 디자인했다.
 

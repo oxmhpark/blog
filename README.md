@@ -7,7 +7,7 @@ NEMORIUM.NET
 
 - 플랫폼: [깃허브 페이지스][github-pages]
 - 블로그 프레임워크: [지킬][jekyll]
-- 덧글 프레임워크: [giscus][giscus]
+- 댓글 프레임워크: [giscus][giscus]
 - 검색 프레임워크: [GPSE][gpse]
 - 디자인 리소스: [Freesentation][freesentation]
 
