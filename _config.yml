@@ -95,13 +95,21 @@ defaults:
       path: "_archive_categories"
     values:
       layout: category
-      meta: nil
+      meta:
+        - address
+        - years
+        - categories
+        - tags
   -
     scope:
       path: "_archive_tags"
     values:
       layout: tag
-      meta: nil
+      meta:
+        - address
+        - years
+        - categories
+        - tags
   -
     scope:
       path: "_archive_years"
