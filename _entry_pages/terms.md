@@ -1,5 +1,5 @@
 ---
-title: "#알기"
+title: "#배우기"
 slug: terms
 meta: null
 ---
