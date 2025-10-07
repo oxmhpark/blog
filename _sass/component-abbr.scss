@@ -14,6 +14,7 @@ abbr:hover:after {
 	position: absolute;
 	z-index: 98;
 	font-size: $font-size-body;
+	font-weight: normal;
 	word-wrap: normal;
 	word-break: keep-all;
 }
