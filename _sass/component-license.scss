@@ -1,0 +1,32 @@
+.license {
+	a {
+		&:before {
+			display: none;
+		}
+
+		&:link,
+		&:hover,
+		&:active,
+		&:visited {
+			color: var(--color-meta-text);
+		}
+
+		&:link,
+		&:active,
+		&:visited {
+			text-decoration: none;
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		&.license-code {
+			font-weight: bolder;
+		}
+
+		&.license-description {
+			font-weight: normal;
+		}
+	}
+}
