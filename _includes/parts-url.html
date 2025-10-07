@@ -1,1 +1,1 @@
-{% if post.address and post.filepath contains '_entry_links' %}{{ post.address }}{% else %}{{ post.url }}{% endif %}
+{% if post.address and post.layout == 'link' %}{{ post.address }}{% else %}{{ post.url }}{% endif %}
