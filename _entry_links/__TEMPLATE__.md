@@ -9,8 +9,8 @@ lastmod: 2025-02-21 00:00:00 +0900
 years:
   - 2025
 categories:
-  - 책읽기
+  - 장르 읽기
 tags:
-  - 잡학
+  - 소설
 excerpt: "Sample excerpt"
 ---

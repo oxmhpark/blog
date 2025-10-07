@@ -3,7 +3,7 @@ title: Unifont 글꼴
 slug: unifont-글꼴
 address: https://unifoundry.com/unifont/index.html
 categories:
-  - 게임 개발
+  - 개발일지
 tags:
   - 정보통신
   - 문자
