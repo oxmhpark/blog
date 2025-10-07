@@ -8,14 +8,16 @@ $font-serif: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFon
 $font-monospace: "NeoDunggeunmo Code", "Bitstream Vera Sans Mono", "Courier", monospace;
 
 // Typography
-$font-title: $font-sans-serif;
-$font-menu: $font-sans-serif;
-$font-heading: $font-sans-serif;
-$font-text: $font-serif;
-$font-quote: $font-serif;
-$font-meta: $font-sans-serif;
-$font-form: $font-sans-serif;
-$font-code: $font-monospace;
+$font-family-title: $font-sans-serif;
+$font-family-menu: $font-sans-serif;
+$font-family-heading: $font-sans-serif;
+$font-family-text: $font-serif;
+$font-family-quote: $font-serif;
+$font-family-meta: $font-sans-serif;
+$font-family-form: $font-sans-serif;
+$font-family-code: $font-monospace;
+
+$font-size-body: 18px;
 
 :root {
   --width-frame: 800px;

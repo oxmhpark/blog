@@ -10,7 +10,7 @@
   .entry-title {
     margin: 0;
     font-size: 60px;
-    font-family: $font-text;
+    font-family: $font-family-text;
     text-align: left;
     font-weight: bold;
     font-kerning: auto;
@@ -54,7 +54,7 @@
     cursor: default;
     color: var(--color-meta-text);
     font-size: 0.85em;
-    font-family: $font-meta;
+    font-family: $font-family-meta;
 
     .entry-address {
       display: block;

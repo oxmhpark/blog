@@ -2,7 +2,7 @@
 	height: 36px;
 	line-height: 36px;
 	cursor: default;
-	font-family: $font-title;
+	font-family: $font-family-title;
 	font-weight: normal;
 	font-size: 14px;
 	color: var(--color-title-text);
@@ -67,7 +67,7 @@
 		line-height: inherit;
 		font-size: inherit;
 		font-weight: inherit;
-		/* font-family: $font-menu; */
+		/* font-family: $font-family-menu; */
 		/* text-transform: uppercase; */
 		/* color: var(--color-nav-text); */
 		color: inherit;

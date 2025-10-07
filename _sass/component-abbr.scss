@@ -13,7 +13,9 @@ abbr:hover:after {
 	padding: 5px 15px;
 	position: absolute;
 	z-index: 98;
-	content: attr(data-title);
+	font-size: $font-size-body;
+	word-wrap: normal;
+	word-break: keep-all;
 }
 
 abbr:hover:before{

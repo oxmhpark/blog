@@ -5,11 +5,11 @@ html {
 
 body {
   background: var(--color-background);
-  font-family: $font-text;
+  font-family: $font-family-text;
   color: var(--color-body-text);
-  line-height: 1.7;
+  line-height: 1.7em;
   font-weight: 400;
-  font-size: 18px;
+  font-size: $font-size-body;
   height: 100%;
   word-break: break-word;
 }
@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $font-heading;
+  font-family: $font-family-heading;
   color: var(--color-heading-text);
   font-weight: bold;
   line-height: 1.7;
@@ -57,7 +57,7 @@ blockquote {
   margin: 1.8em 0em;
   padding: 0 0 0 36px;
   color: var(--color-quote-text);
-  font-family: $font-quote;
+  font-family: $font-family-quote;
   font-style: italic;
 
   &:before {
@@ -223,7 +223,7 @@ code,
 kbd,
 pre,
 xmp {
-  font-family: $font-code;
+  font-family: $font-family-code;
 }
 
 code,
@@ -292,11 +292,11 @@ p > img {
 button,
 input,
 option {
-  font-family: $font-form;
+  font-family: $font-family-form;
 }
 
 textarea {
-  font-family: $font-text;
+  font-family: $font-family-text;
 }
 // Fixes images in popup boxes from Google Translate
 
