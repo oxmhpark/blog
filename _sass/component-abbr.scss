@@ -17,6 +17,7 @@ abbr:hover:after {
 	font-weight: normal;
 	word-wrap: normal;
 	word-break: keep-all;
+	white-space: nowrap;
 }
 
 abbr:hover:before{
