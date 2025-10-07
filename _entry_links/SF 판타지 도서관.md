@@ -1,8 +1,8 @@
 ---
-title: SF & 판타지 데이터베이스
-slug: SF-판타지-데이터베이스
+title: SF & 판타지 도서관
+slug: SF-판타지-도서관
 address: http://sflib.com/
 categories:
   - 장르 읽기
 ---
-전홍식 님이 운영하는 사설 데이터베이스.
+전홍식 님이 운영하는 사설 도서관.
