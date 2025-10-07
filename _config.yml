@@ -123,6 +123,9 @@ defaults:
       layout: link
       meta:
         - address
+        - years
+        - categories
+        - tags
       read_more:
         label: "[...]"
   -
