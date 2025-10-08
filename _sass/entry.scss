@@ -81,12 +81,7 @@
 
       li {
         display: inline;
-        margin: 0 0 0 0.5em;
-
-        &:first
-        {
-          margin-left: 0;
-        }
+        margin: 0 0.5em 0 0;
 
         a {
           color: inherit;
@@ -103,6 +98,9 @@
         margin: 0;
 
         li {
+          display: block;
+          margin: 0;
+
           a {
             @include ref
           }
