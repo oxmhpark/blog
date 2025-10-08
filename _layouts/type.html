@@ -6,7 +6,8 @@
 {% assign post = page %}
 {% include post-format-fulltext.html %}
 
-{% assign posts = site["entry_" + post.slug] | default: "" %}
+{% assign collectionName = post.slug | prepend: "entry_" %}
+{% assign posts = site[collectionName] | default: "" %}
 {% if posts == "" %}{% assign writes = "" | split: "" %}{% endif %}
 {% assign posts = posts | sort: "updated" | reverse %}
 {% include list-posts.html %}
