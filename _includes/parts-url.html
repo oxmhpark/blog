@@ -1,1 +1,1 @@
-{% if post.address and post.layout == 'link' %}{{ post.address }}{% else %}{{ post.url }}{% endif %}
+{% if post.refs and post.layout == 'link' %}{{ post.refs[0] }}{% else %}{{ post.url }}{% endif %}

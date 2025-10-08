@@ -4,5 +4,6 @@ slug: SF-판타지-도서관
 refs:
   - http://sflib.com/
 categories:
+  - 취미
 ---
 전홍식 님이 운영하는 사설 도서관.
