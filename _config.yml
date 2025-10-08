@@ -84,8 +84,6 @@ defaults:
         - years
         - categories
         - tags
-      read_more:
-        label: "전문 읽기 &rarr;"
   -
     scope:
       path: "_archive_categories"
