@@ -9,7 +9,6 @@ lastmod: 2025-02-21 00:00:00 +0900
 years:
   - 2025
 categories:
-  - 장르 읽기
 tags:
 excerpt: "Sample excerpt"
 ---
