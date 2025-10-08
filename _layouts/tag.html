@@ -17,10 +17,12 @@
 {% assign reads = site.entry_reads | where_exp: "post", "post.tags contains archiveName" | default: "" %}
 {% assign studies = site.entry_studies | where_exp: "post", "post.tags contains archiveName" | default: "" %}
 {% assign plays = site.entry_plays | where_exp: "post", "post.tags contains archiveName" | default: "" %}
+
 {% if writes == "" %}{% assign writes = "" | split: "" %}{% endif %}
 {% if reads == "" %}{% assign reads = "" | split: "" %}{% endif %}
 {% if studies == "" %}{% assign studies = "" | split: "" %}{% endif %}
 {% if plays == "" %}{% assign plays = "" | split: "" %}{% endif %}
+
 {% assign posts = writes | concat: reads | concat: studies | concat: plays %}
 {% assign posts = posts | sort: "updated" | reverse %}
 {% include list-posts.html %}
