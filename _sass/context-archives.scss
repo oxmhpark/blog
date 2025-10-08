@@ -6,6 +6,10 @@
   {
     margin: 0;
     font-size: inherit;
+
+    .body-archive & {
+      display: none;
+    }
   }
   
   ul.list-terms
