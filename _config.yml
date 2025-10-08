@@ -55,7 +55,7 @@ collections:
     output: _entry_pages
     path: _entry_pages
     permalink: ":slug"
-  entry_refs:
+  entry_links:
     output: _entry_links
     path: _entry_links
     permalink: ":slug"
