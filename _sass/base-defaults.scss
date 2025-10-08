@@ -149,38 +149,7 @@ a {
     color: var(--color-link-hover);
   }
 
-  &:not(:has(img)) {
-    &[href^="http://"],
-    &[href^="https://"],
-    &[href^="ftp:"],
-    &[href^="sftp:"],
-    &[href^="mailto:"] {
-      &:before {
-        display: inline;
-        font-size: 0.85em;
-        content: url('/assets/external-link.svg');
-      }
-      /*
-      &[href^="http://"],
-      &[href^="https://"] {
-        &:before { 
-          content: url('/assets/external-link.svg');
-        }
-      }
-      &[href^="ftp:"],
-      &[href^="sftp:"] {
-        &:before { 
-          content: '📁';
-        }
-      }
-      &[href^="mailto:"] {
-        &:before { 
-          content: '✉️';
-        }
-      }
-      */
-    }
-  }
+  @include ref;
 }
 
 ol,
