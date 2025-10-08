@@ -1,0 +1,8 @@
+<div class="archives archives-type-terms archives-type-years">
+    <h1>{{ site.data.keywords.archives.years }}</h1>
+    <ul class="list-terms list-years">
+        {% for post in years %}
+        <li><a href="{{ post.url }}">#{% include parts-title.html %}</a></li>
+        {% endfor %}
+    </ul>
+</div>

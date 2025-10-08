@@ -1,0 +1,8 @@
+<div class="archives archives-type-terms archives-type-tags">
+    <h1>{{ site.data.keywords.archives.tags }}</h1>
+    <ul class="list-terms list-tags">
+        {% for post in tags %}
+        <li><a href="{{ post.url }}">#{% include parts-title.html %}</a></li>
+        {% endfor %}
+    </ul>
+</div>
