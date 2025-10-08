@@ -8,10 +8,12 @@
 
 {% assign archiveName = post.title %}
 
+{% comment %}
 {% assign tags = site.archive_tags | where_exp: "post", "post.categories contains archiveName" | default: "" %}
 {% if tags == "" %}{% assign tags = "" | split: "" %}{% endif %}
-{% assign tags = tags | sort: "title" %}
-{% include list-tags.html %}
+{% assign posts = tags | sort: "title" %}
+{% include list-posts-as-tags.html %}
+{% endcomment %}
 
 {% assign writes = site.entry_writes | where_exp: "post", "post.categories contains archiveName" | default: "" %}
 {% assign reads = site.entry_reads | where_exp: "post", "post.categories contains archiveName" | default: "" %}

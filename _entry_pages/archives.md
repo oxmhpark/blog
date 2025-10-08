@@ -16,11 +16,11 @@ meta: null
     </ul>
 </div>
 
-{% assign categories = site.archive_categories %}
-{% include list-categories.html %}
+{% assign posts = site.archive_categories %}
+{% include list-posts-as-categories.html %}
 
-{% assign tags = site.archive_tags %}
-{% include list-tags.html %}
+{% assign posts = site.archive_tags %}
+{% include list-posts-as-tags.html %}
 
-{% assign years = site.archive_years %}
-{% include list-years.html %}
+{% assign posts = site.archive_years %}
+{% include list-posts-as-years.html %}
