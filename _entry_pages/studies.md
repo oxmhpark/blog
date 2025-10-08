@@ -1,6 +1,7 @@
 ---
 title: "#알기"
 layout: type
+collection: entry_studies
 slug: studies
 meta: null
 ---

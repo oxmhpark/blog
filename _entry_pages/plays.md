@@ -1,6 +1,7 @@
 ---
 title: "#놀기"
 layout: type
+collection: entry_plays
 slug: plays
 meta: null
 ---

@@ -1,6 +1,7 @@
 ---
 title: "#쓰기"
 layout: type
+collection: entry_writes
 slug: writes
 meta: null
 ---

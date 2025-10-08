@@ -1,6 +1,7 @@
 ---
 title: "#읽기"
 layout: type
+collection: entry_reads
 slug: reads
 meta: null
 ---
