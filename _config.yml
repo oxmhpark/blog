@@ -55,13 +55,17 @@ collections:
     output: _entry_pages
     path: _entry_pages
     permalink: ":slug"
+  entry_pages:
+    output: _entry_plays
+    path: _entry_plays
+    permalink: ":slug"
   entry_reads:
     output: _entry_reads
     path: _entry_reads
     permalink: ":slug"
-  entry_terms:
-    output: _entry_terms
-    path: _entry_terms
+  entry_studies:
+    output: _entry_studies
+    path: _entry_studies
     permalink: ":slug"
   entry_writes:
     output: true
@@ -120,6 +124,19 @@ defaults:
         - lastmod
   -
     scope:
+      path: "_entry_plays"
+    values:
+      layout: like
+      meta:
+        - refs
+        - date
+        - lastmod
+        - years
+        - categories
+        - tags
+        - links
+  -
+    scope:
       path: "_entry_reads"
     values:
       layout: read
@@ -133,9 +150,9 @@ defaults:
         - links
   -
     scope:
-      path: "_entry_terms"
+      path: "_entry_studies"
     values:
-      layout: term
+      layout: study
       meta:
         - refs
         - date
@@ -178,7 +195,7 @@ exclude:
   - _entry_links/__TEMPLATE__.md
   - _entry_writes/__TEMPLATE__.md
   - _entry_pages/__TEMPLATE__.md
-  - _entry_terms/__TEMPLATE__.md
+  - _entry_studies/__TEMPLATE__.md
   - _entry_reads/__TEMPLATE__.md
 
 # 플러그인

@@ -1,8 +1,8 @@
 {% for post in posts %}
 {% if forloop.first %}
-<div class="archives archives-type-terms archives-type-years">
+<div class="archives archives-type-studies archives-type-years">
     <h1>{{ site.data.keywords.archives.years }}</h1>
-    <ul class="list-terms list-years">
+    <ul class="list-studies list-years">
 {% endif %}
         <li><a href="{{ post.url }}">#{% include parts-title.html %}</a></li>
 {% if forloop.last %}

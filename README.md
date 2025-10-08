@@ -19,7 +19,7 @@ NEMORIUM.NET
 - [`entry_pages`][entry-pages]: 고정 페이지; 관리 목적이 아니라면 추가할 일이 없을 것이다.
 - [`entry_links`][entry-links]: 보존할 인터넷 주소들; 홈페이지, 위키 항목, 검색 쿼리 등.
 - [`entry_reads`][entry-reads]: 텍스트 요약·평가; 읽고 보고 들은 것들.
-- [`entry_terms`][entry-meta-item]: 주제를 정해서 조사한 내용들.
+- [`entry_studies`][entry-meta-item]: 주제를 정해서 조사한 내용들.
 - [`entry_writes`][entry-writes]: 스스로 의도·설계·작성한 글.
 
 # 운영방침
@@ -39,6 +39,6 @@ NEMORIUM.NET
 [entry-links]: https://github.com/oxmhpark/blog/tree/main/_entry_links
 [entry-pages]: https://github.com/oxmhpark/blog/tree/main/_entry_pages
 [entry-reads]: https://github.com/oxmhpark/blog/tree/main/_entry_reads
-[entry-meta-item]: https://github.com/oxmhpark/blog/tree/main/_entry_terms
+[entry-meta-item]: https://github.com/oxmhpark/blog/tree/main/_entry_studies
 [entry-writes]: https://github.com/oxmhpark/blog/tree/main/_entry_writes
 [memo]: https://memo.nemorium.net/@oxmhpark

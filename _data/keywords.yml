@@ -7,6 +7,7 @@ archives:
   tags: 소분류
   years: 연도
 types:
-  reads: 읽기
-  terms: 배우기
   writes: 쓰기
+  reads: 읽기
+  studies: 알기
+  plays: 놀기

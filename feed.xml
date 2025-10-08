@@ -2,13 +2,15 @@
 layout: raw
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-{% assign writes = site.entry_writes | limit:7 | default "" %}
-{% assign reads = site.entry_reads | limit:7 | default "" %}
-{% assign terms = site.entry_terms | limit:7 | default "" %}
+{% assign writes = site.entry_writes | default "" %}
+{% assign reads = site.entry_reads | default "" %}
+{% assign studies = site.entry_studies | default "" %}
+{% assign plays = site.entry_plays | default "" %}
 {% if writes == "" %}{% assign writes = "" | split: "" %}{% endif %}
 {% if reads == "" %}{% assign reads = "" | split: "" %}{% endif %}
-{% if terms == "" %}{% assign terms = "" | split: "" %}{% endif %}
-{% assign posts = writes | concat: reads | concat: terms %}
+{% if studies == "" %}{% assign studies = "" | split: "" %}{% endif %}
+{% if plays == "" %}{% assign plays = "" | split: "" %}{% endif %}
+{% assign posts = writes | concat: reads | concat: studies | concat: plays %}
 {% assign posts = posts | sort: "updated" | reverse %}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
