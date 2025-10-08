@@ -56,11 +56,6 @@
     font-size: 0.85em;
     font-family: $font-family-meta;
 
-    .entry-refs {
-      display: block;
-      margin: 0;
-    }
-
     .entry-author {
       display: none;
     }
@@ -99,6 +94,19 @@
           &:before {
             content: "#";
             display: inline;
+          }
+        }
+      }
+
+      &.entry-refs {
+        display: block;
+        margin: 0;
+
+        li {
+          a {
+            &:before {
+              display: none;
+            }
           }
         }
       }
