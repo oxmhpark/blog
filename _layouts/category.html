@@ -21,7 +21,7 @@
 {% if reads == "" %}{% assign reads = "" | split: "" %}{% endif %}
 {% if studies == "" %}{% assign studies = "" | split: "" %}{% endif %}
 {% if plays == "" %}{% assign plays = "" | split: "" %}{% endif %}
-{% assign posts = writes | concat: reads | concat: studies | concat: lies %}
+{% assign posts = writes | concat: reads | concat: studies | concat: plays %}
 {% assign posts = posts | sort: "updated" | reverse %}
 {% include list-posts.html %}
 
