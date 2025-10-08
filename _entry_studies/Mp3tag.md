@@ -5,5 +5,5 @@ refs:
   - https://www.mp3tag.de/
 categories:
   - 관리
-  - 취미
+  - 장르 입문
 ---

@@ -9,11 +9,11 @@ lastmod: 2025-02-21 00:00:00 +0900
 years:
   - 2025
 categories:
-  - 공부
+  - 인문학 입문
   - 관리
   - 의식주
-  - 취미
-  - 코딩
+  - 장르 입문
+  - 개발일지
 tags:
   - 가화삼보
 excerpt: "Sample excerpt"
