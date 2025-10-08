@@ -1,0 +1,76 @@
+@mixin link-external {
+	&:not(:has(img)) {
+
+		&[href^="http://"],
+		&[href^="https://"],
+		&[href^="ftp:"],
+		&[href^="sftp:"],
+		&[href^="mailto:"] {
+			&:before {
+				display: inline;
+				font-size: 0.85em;
+				content: url('/assets/external-link.svg');
+			}
+
+			/*
+      &[href^="http://"],
+      &[href^="https://"] {
+        &:before { 
+          content: url('/assets/external-link.svg');
+        }
+      }
+      &[href^="ftp:"],
+      &[href^="sftp:"] {
+        &:before { 
+          content: '📁';
+        }
+      }
+      &[href^="mailto:"] {
+        &:before { 
+          content: '✉️';
+        }
+      }
+      */
+		}
+	}
+}
+
+@mixin hr {
+	display: block !important;
+	width: 30% !important;
+	min-width: 300px !important;
+	margin: 2.5em auto 2.5em 0 !important;
+	border-top: 1px solid var(--decoration-hr-color) !important;
+	border-left: none !important;
+	border-right: none !important;
+	border-bottom: none !important;
+	outline: none !important;
+}
+
+@mixin content-description {
+	&>.entry-title {
+		&:before {
+			display: inline;
+			content: '#';
+		}
+	}
+
+	&>.entry-body {
+		padding-left: 1em;
+		border-left: 10px solid var(--color-code-background);
+		color: var(--color-excerpt-text);
+	}
+}
+
+// Responsives
+@mixin desktop {
+	@media screen and (min-width: 641px) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media screen and (max-width: 640px) {
+		@content;
+	}
+}

@@ -1,0 +1,14 @@
+---
+---
+{% assign body_class = "body-archive body-archive-category" %}
+{% include base-header.html %}
+
+{% assign post = page %}
+{% include post-format-fulltext.html %}
+
+{% assign posts = site.entry_{{ post.slug }} | default: "" %}
+{% if posts == "" %}{% assign writes = "" | split: "" %}{% endif %}
+{% assign posts = posts | sort: "updated" | reverse %}
+{% include list-posts.html %}
+
+{% include base-footer.html %}

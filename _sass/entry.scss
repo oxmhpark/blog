@@ -102,7 +102,7 @@
           margin: 0;
 
           a {
-            @include ref
+            @include link-external;
           }
         }
       }

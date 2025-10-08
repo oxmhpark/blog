@@ -32,16 +32,6 @@
 
 body.body-archive {
   #main > .entry {
-    & > .entry-title {
-      &:before {
-        display: inline;
-        content: '#';
-      }
-    }
-    & > .entry-body {
-      padding-left: 1em;
-      border-left: 10px solid var(--color-code-background);
-      color: var(--color-excerpt-text);
-    }
+    @include content-description;
   }
 }

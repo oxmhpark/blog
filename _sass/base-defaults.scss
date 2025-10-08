@@ -149,7 +149,7 @@ a {
     color: var(--color-link-hover);
   }
 
-  @include ref;
+  @include link-external;
 }
 
 ol,
