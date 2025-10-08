@@ -55,7 +55,7 @@ collections:
     output: _entry_pages
     path: _entry_pages
     permalink: ":slug"
-  entry_links:
+  entry_refs:
     output: _entry_links
     path: _entry_links
     permalink: ":slug"
@@ -81,7 +81,7 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       meta:
-        - address
+        - refs
         - author
         - date
         - lastmod
@@ -96,7 +96,7 @@ defaults:
     values:
       layout: category
       meta:
-        - address
+        - refs
         - years
         - categories
         - tags
@@ -106,7 +106,7 @@ defaults:
     values:
       layout: tag
       meta:
-        - address
+        - refs
         - years
         - categories
         - tags
@@ -130,7 +130,7 @@ defaults:
     values:
       layout: link
       meta:
-        - address
+        - refs
         - years
         - categories
         - tags
@@ -142,7 +142,7 @@ defaults:
     values:
       layout: read
       meta:
-        - address
+        - refs
         - date
         - lastmod
         - years
@@ -155,7 +155,7 @@ defaults:
     values:
       layout: term
       meta:
-        - address
+        - refs
         - date
         - lastmod
         - years
@@ -168,7 +168,7 @@ defaults:
     values:
       layout: write
       meta:
-        - address
+        - refs
         - date
         - lastmod
         - years

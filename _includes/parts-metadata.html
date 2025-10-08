@@ -1,10 +1,17 @@
 <div class="entry-meta">
-	{% if post.meta and post.meta contains 'address' and post.address %}<p class="entry-address"><a href="{{ post.address }}">{{ post.address }}</a></p>{% endif %}
+	{% if post.meta and post.meta contains 'refs' and post.refs %}
+	<ul class="entry-meta-item entry-refs">
+		{% for ref in post.refs %}
+		<li><a href="{{ ref }}">{{ ref }}</a></li>
+		{% endfor %}
+	</ul>
+	{% endif %}
+
 	{% if post.meta and post.meta contains 'date' %}<p class="entry-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.format.date }}</p>{% endif %}
 	{% if post.meta and post.meta contains 'lastmod' and post.lastmod %}<p class="entry-date entry-date-modified" datetime="{{ post.lastmod | date_to_xmlschema }}">(Updated: {{ post.lastmod | date: site.format.date }})</p>{% endif %}
 
 	{% if post.meta and post.meta contains 'years' and post.years %}
-	<ul class="entry-terms entry-years">
+	<ul class="entry-meta-item entry-years">
 		{% for year in post.years %}
 		<li><a href="/year/{{ year }}">{{ year }}</a></li>
 		{% endfor %}
@@ -12,7 +19,7 @@
 	{% endif %}
 
 	{% if post.meta and post.meta contains 'categories' and post.categories %}
-	<ul class="entry-terms entry-categories">
+	<ul class="entry-meta-item entry-categories">
 		{% for category in post.categories %}
 		<li><a href="/category/{{ category | slugify }}">{{ category }}</a></li>
 		{% endfor %}
@@ -20,7 +27,7 @@
 	{% endif %}
 
 	{% if post.meta and post.meta contains 'tags' and post.tags %}
-	<ul class="entry-terms entry-tags">
+	<ul class="entry-meta-item entry-tags">
 		{% for tag in post.tags %}
 		<li><a href="/tag/{{ tag | slugify }}">{{ tag }}</a></li>
 		{% endfor %}
@@ -28,7 +35,7 @@
 	{% endif %}
 
 	{% if post.meta and post.meta contains 'links' and post.links %}
-	<ul class="entry-terms entry-links">
+	<ul class="entry-meta-item entry-links">
 		{% for link in post.links %}
 		<li><a href="/{{ link | slugify }}">{{ link }}</a></li>
 		{% endfor %}
