@@ -126,7 +126,7 @@ defaults:
     scope:
       path: "_entry_plays"
     values:
-      layout: like
+      layout: play
       meta:
         - refs
         - date
