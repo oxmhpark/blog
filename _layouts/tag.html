@@ -17,7 +17,7 @@
 {% assign posts = posts | sort: "updated" | reverse %}
 {% include list-posts.html %}
 
-{% assign posts = site.entry_links | where_exp: "post", "post.tags contains archiveName" | default: "" %}
+{% assign posts = posts | where_exp: "post", "post.bookmark == true" | default: "" %}
 {% if posts == "" %}{% assign posts = "" | split: "" %}{% endif %}
 {% assign posts = posts | sort: "title" %}
 {% include list-posts-as-links.html %}

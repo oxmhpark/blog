@@ -9,6 +9,11 @@
   class: ""
   icon: ""
 -
+  name: "#즐겨찾기"
+  url: "/bookmarks"
+  class: ""
+  icon: ""
+-
   name: "#소개"
   url: "/about"
   class: ""

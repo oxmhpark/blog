@@ -1,4 +1,5 @@
 ---
+bookmark: true
 title: Mp3tag
 slug: mp3tag
 refs:

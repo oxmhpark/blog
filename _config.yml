@@ -55,10 +55,6 @@ collections:
     output: _entry_pages
     path: _entry_pages
     permalink: ":slug"
-  entry_links:
-    output: _entry_links
-    path: _entry_links
-    permalink: ":slug"
   entry_reads:
     output: _entry_reads
     path: _entry_reads
@@ -124,18 +120,6 @@ defaults:
       meta:
         - date
         - lastmod
-  -
-    scope:
-      path: "_entry_links"
-    values:
-      layout: link
-      meta:
-        - refs
-        - years
-        - categories
-        - tags
-      read_more:
-        label: "[...]"
   -
     scope:
       path: "_entry_reads"

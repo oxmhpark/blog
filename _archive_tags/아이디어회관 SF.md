@@ -1,4 +1,5 @@
 ---
+bookmark: true
 title: 아이디어회관 SF
 slug: 아이디어회관-SF
 refs:

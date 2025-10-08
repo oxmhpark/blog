@@ -12,7 +12,6 @@ meta: null
         <li><a href="/writes">#{{ site.data.keywords.types.writes }}</a></li>
         <li><a href="/reads">#{{ site.data.keywords.types.reads }}</a></li>
         <li><a href="/terms">#{{ site.data.keywords.types.terms }}</a></li>
-        <li><a href="/links">#{{ site.data.keywords.types.links }}</a></li>
     </ul>
 </div>
 
