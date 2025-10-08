@@ -2,7 +2,7 @@
 	{% if post.meta and post.meta contains 'refs' and post.refs %}
 	<ul class="entry-meta-item entry-refs">
 		{% for ref in post.refs %}
-		<li><a href="{{ ref | slugify }}">{{ ref }}</a></li>
+		<li><a href="{{ ref }}">{{ ref }}</a></li>
 		{% endfor %}
 	</ul>
 	{% endif %}
