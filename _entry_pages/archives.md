@@ -7,10 +7,10 @@ meta: null
 <div class="gcse-searchbox-only"></div>
 
 {% assign categories = site.archive_categories %}
-{% include list_categories.html %}
+{% include list-categories.html %}
 
 {% assign tags = site.archive_tags %}
-{% include list_tags.html %}
+{% include list-tags.html %}
 
 {% assign years = site.archive_years %}
-{% include list_years.html %}
+{% include list-years.html %}
