@@ -1,6 +1,6 @@
 ui:
-  read-more: 전문 읽기
-  read-more-bookmark: 
+  read-more: 전문 읽기 &rarr;
+  read-more-bookmark: 〔…〕
 archives:
   types: 대분류
   categories: 중분류
