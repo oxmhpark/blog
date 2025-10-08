@@ -1,1 +1,1 @@
-{% if post.refs and post.layout == 'link' %}{{ post.refs[0] }}{% else %}{{ post.url }}{% endif %}
+{% if post.refs and post.layout == 'link' %}{% for ref in post.refs %}{% if forloop.first %}{{ ref }}{% endif %}{% endfor %}{% else %}{{ post.url }}{% endif %}
