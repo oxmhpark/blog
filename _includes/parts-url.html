@@ -1,1 +1,1 @@
-{% if post.refs and post.layout == 'link' %}{{ post.refs[0] }}{% else %}{{ post.url }}{% endif %}
+{% if post.refs and post.bookmark == true %}{{ post.refs[0] }}{% else %}{{ post.url }}{% endif %}
