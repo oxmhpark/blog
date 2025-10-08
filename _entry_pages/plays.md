@@ -1,5 +1,5 @@
 ---
-title: "#놀기"
+title: "놀기"
 layout: type
 collection: entry_plays
 slug: plays
