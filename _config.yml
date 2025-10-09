@@ -192,11 +192,11 @@ exclude:
   - _archive_categories/__TEMPLATE__.md
   - _archive_tags/__TEMPLATE__.md
   - _archive_years/__TEMPLATE__.md
-  - _entry_links/__TEMPLATE__.md
-  - _entry_writes/__TEMPLATE__.md
   - _entry_pages/__TEMPLATE__.md
-  - _entry_studies/__TEMPLATE__.md
   - _entry_reads/__TEMPLATE__.md
+  - _entry_studies/__TEMPLATE__.md
+  - _entry_writes/__TEMPLATE__.md
+  - _entry_plays/__TEMPLATE__.md
 
 # 플러그인
 #plugins:
