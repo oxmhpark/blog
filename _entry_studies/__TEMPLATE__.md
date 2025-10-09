@@ -13,7 +13,7 @@ categories:
   - 도메인 관리
   - 생활기록부
   - 인문학 입문
-  - 극작술사의 제자
+  - 극작술 입문
 tags:
   - 가화삼보
 excerpt: "Sample excerpt"

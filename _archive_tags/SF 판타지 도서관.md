@@ -5,6 +5,6 @@ slug: SF-판타지-도서관
 refs:
   - http://sflib.com/
 categories:
-  - 극작술사의 제자
+  - 극작술 입문
 ---
 전홍식 님이 운영하는 사설 도서관.
