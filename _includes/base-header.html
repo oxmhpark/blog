@@ -10,14 +10,14 @@
   <meta http-equiv="Expires" content="0" />
 
   <title>{% if page.title and page.title != "" %}{{ page.title }} – {% endif %}{{ site.title }}{% if site.description and site.description != "" %} – {{ site.description }}{% endif %}</title>
-  <meta name="description" content="{% if post.excerpt %}{{ post.excerpt | strip_html }}{% else %}{{ content | strip_html | truncatewords: 30 }}{% endif %}" />
+  <meta name="description" content="{% if page.excerpt %}{{ post.excerpt | strip_html }}{% else %}{{ content | strip_html | truncatewords: 30 }}{% endif %}" />
   {% assign metaKeywords = "" | split: ',' %}
-  {% if post.subtitle %}{% assign metaKeywords = metaKeywords | push: post.subtitle %}{% endif %}
-  {% if post.abbr %}{% assign metaKeywords = metaKeywords | push: post.abbr %}{% endif %}
-  {% if post.ruby %}{% assign metaKeywords = metaKeywords | push: post.ruby %}{% endif %}
-  {% if post.categories and post.categories.size > 0 %}{% assign metaKeywords = metaKeywords | concat: post.categories %}{% endif %}
-  {% if post.tags and post.tags.size > 0 %}{% assign metaKeywords = metaKeywords | concat: post.tags %}{% endif %}
-  {% if post.years and post.years.size > 0 %}{% assign metaKeywords = metaKeywords | concat: post.years %}{% endif %}
+  {% if page.subtitle %}{% assign metaKeywords = metaKeywords | push: page.subtitle %}{% endif %}
+  {% if page.abbr %}{% assign metaKeywords = metaKeywords | push: page.abbr %}{% endif %}
+  {% if page.ruby %}{% assign metaKeywords = metaKeywords | push: page.ruby %}{% endif %}
+  {% if page.categories and page.categories.size > 0 %}{% assign metaKeywords = metaKeywords | concat: page.categories %}{% endif %}
+  {% if page.tags and page.tags.size > 0 %}{% assign metaKeywords = metaKeywords | concat: page.tags %}{% endif %}
+  {% if page.years and page.years.size > 0 %}{% assign metaKeywords = metaKeywords | concat: page.years %}{% endif %}
   {% if metaKeywords.size > 0 %}<meta name="keywords" content="{{ metaKeywords | join: ',' | strip }}" />{% endif %}
 
   {% if site.favicon_url %}<link rel="icon" type="image/png" sizes="32x32" href="{{ site.favicon_url }}" />{% endif %}
