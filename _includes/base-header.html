@@ -11,7 +11,7 @@
 
   <title>{% if page.title and page.title != "" %}{{ page.title }} – {% endif %}{{ site.title }}{% if site.description and site.description != "" %} – {{ site.description }}{% endif %}</title>
   <meta name="description" content="{% if post.excerpt %}{{ post.excerpt | strip_html }}{% else %}{{ content | strip_html | truncatewords: 30 }}" />
-  {% assign metaKeywords = [] %}
+  {% assign metaKeywords = "" | split: ',' %}
   {% if post.subtitle %}{% assign metaKeywords = metaKeywords | push: post.subtitle %}{% endif %}
   {% if post.abbr %}{% assign metaKeywords = metaKeywords | push: post.abbr %}{% endif %}
   {% if post.ruby %}{% assign metaKeywords = metaKeywords | push: post.ruby %}{% endif %}
