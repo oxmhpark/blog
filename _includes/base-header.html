@@ -18,7 +18,7 @@
   {% if post.categories %}{% assign metaKeywords = metaKeywords | concat: post.categories %}{% endif %}
   {% if post.tags %}{% assign metaKeywords = metaKeywords | concat: post.tags %}{% endif %}
   {% if post.years %}{% assign metaKeywords = metaKeywords | concat: post.years %}{% endif %}
-  {% if metaKeywords %}<meta name="keyword" content="{{ metaKeywords | join: ',' }}" />{% endif %}
+  {% if metaKeywords %}{% assign metaKeywordsString = metaKeywords | join: ',' %}<meta name="keywords" content="{{ metaKeywordsString }}" />{% endif %}
 
   {% if site.favicon_url %}<link rel="icon" type="image/png" sizes="32x32" href="{{ site.favicon_url }}" />{% endif %}
   <link rel="stylesheet" type="text/css" href="{{ site.stylesheet_url }}" />
