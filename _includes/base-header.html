@@ -12,12 +12,12 @@
   <title>{% if page.title and page.title != "" %}{{ page.title }} – {% endif %}{{ site.title }}{% if site.description and site.description != "" %} – {{ site.description }}{% endif %}</title>
   <meta name="description" content="{% if post.excerpt %}{{ post.excerpt | strip_html }}{% else %}{{ content | strip_html | truncatewords: 30 }}" />
   {% assign metaKeywords = [] %}
-  {% if post.subtitle %}{% assign metaKeywords = metaKeywords | push post.subtitle %}{% endif %}
-  {% if post.abbr %}{% assign metaKeywords = metaKeywords | push post.abbr %}{% endif %}
-  {% if post.ruby %}{% assign metaKeywords = metaKeywords | push post.ruby %}{% endif %}
-  {% if post.categories %}{% assign metaKeywords = metaKeywords | concat post.categories %}{% endif %}
-  {% if post.tags %}{% assign metaKeywords = metaKeywords | concat post.tags %}{% endif %}
-  {% if post.years %}{% assign metaKeywords = metaKeywords | concat post.years %}{% endif %}
+  {% if post.subtitle %}{% assign metaKeywords = metaKeywords | push: post.subtitle %}{% endif %}
+  {% if post.abbr %}{% assign metaKeywords = metaKeywords | push: post.abbr %}{% endif %}
+  {% if post.ruby %}{% assign metaKeywords = metaKeywords | push: post.ruby %}{% endif %}
+  {% if post.categories %}{% assign metaKeywords = metaKeywords | concat: post.categories %}{% endif %}
+  {% if post.tags %}{% assign metaKeywords = metaKeywords | concat: post.tags %}{% endif %}
+  {% if post.years %}{% assign metaKeywords = metaKeywords | concat: post.years %}{% endif %}
   {% if metaKeywords %}<meta name="keyword" content="{{ metaKeywords | join }}" />{% endif %}
 
   {% if site.favicon_url %}<link rel="icon" type="image/png" sizes="32x32" href="{{ site.favicon_url }}" />{% endif %}
