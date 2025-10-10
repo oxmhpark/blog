@@ -2,16 +2,25 @@
 <html lang="{{ site.lang }}">
 
 <head>
-  <meta charset="utf-8">
-  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
   <meta name="author" content="{{ site.author }}" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
 
   <title>{% if page.title and page.title != "" %}{{ page.title }} – {% endif %}{{ site.title }}{% if site.description and site.description != "" %} – {{ site.description }}{% endif %}</title>
+  <meta name="description" content="{% if post.excerpt %}{{ post.excerpt | strip_html }}{% else %}{{ content | strip_html | truncatewords: 30 }}" />
+  {% assign metaKeywords = [] %}
+  {% if post.subtitle %}{% assign metaKeywords = metaKeywords | push post.subtitle %}{% endif %}
+  {% if post.abbr %}{% assign metaKeywords = metaKeywords | push post.abbr %}{% endif %}
+  {% if post.ruby %}{% assign metaKeywords = metaKeywords | push post.ruby %}{% endif %}
+  {% if post.categories %}{% assign metaKeywords = metaKeywords | concat post.categories %}{% endif %}
+  {% if post.tags %}{% assign metaKeywords = metaKeywords | concat post.tags %}{% endif %}
+  {% if post.years %}{% assign metaKeywords = metaKeywords | concat post.years %}{% endif %}
+  {% if metaKeywords %}<meta name="keyword" content="{{ metaKeywords | join }}" />{% endif %}
 
-  {% if site.favicon_url %}<link rel="icon" type="image/png" sizes="32x32" href="{{ site.favicon_url }}">{% endif %}
+  {% if site.favicon_url %}<link rel="icon" type="image/png" sizes="32x32" href="{{ site.favicon_url }}" />{% endif %}
   <link rel="stylesheet" type="text/css" href="{{ site.stylesheet_url }}" />
   <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.baseurl }}/sitemap.xml" />
   <link rel="alternate" type="application/rss+xml" title="Updates" href="{{ site.baseurl }}/feed.xml" />
