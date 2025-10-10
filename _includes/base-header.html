@@ -15,10 +15,10 @@
   {% if post.subtitle %}{% assign metaKeywords = metaKeywords | push: post.subtitle %}{% endif %}
   {% if post.abbr %}{% assign metaKeywords = metaKeywords | push: post.abbr %}{% endif %}
   {% if post.ruby %}{% assign metaKeywords = metaKeywords | push: post.ruby %}{% endif %}
-  {% if post.categories %}{% assign metaKeywords = metaKeywords | concat: post.categories %}{% endif %}
-  {% if post.tags %}{% assign metaKeywords = metaKeywords | concat: post.tags %}{% endif %}
-  {% if post.years %}{% assign metaKeywords = metaKeywords | concat: post.years %}{% endif %}
-  {% if metaKeywords %}{% assign metaKeywordsString = metaKeywords | join: ',' %}<meta name="keywords" content="{{ metaKeywordsString }}" />{% endif %}
+  {% if post.categories and post.categories.size > 0 %}{% assign metaKeywords = metaKeywords | concat: post.categories %}{% endif %}
+  {% if post.tags and post.tags.size > 0 %}{% assign metaKeywords = metaKeywords | concat: post.tags %}{% endif %}
+  {% if post.years and post.years.size > 0 %}{% assign metaKeywords = metaKeywords | concat: post.years %}{% endif %}
+  {% if metaKeywords.size > 0 %}<meta name="keywords" content="{{ metaKeywords | join: ',' | strip }}" />{% endif %}
 
   {% if site.favicon_url %}<link rel="icon" type="image/png" sizes="32x32" href="{{ site.favicon_url }}" />{% endif %}
   <link rel="stylesheet" type="text/css" href="{{ site.stylesheet_url }}" />
