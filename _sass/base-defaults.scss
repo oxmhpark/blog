@@ -7,7 +7,7 @@ body {
   background: var(--color-background);
   font-family: $font-family-text;
   color: var(--color-body-text);
-  line-height: 1.7em;
+  line-height: $line-height-body;
   font-weight: 400;
   font-size: $font-size-body;
   height: 100%;
@@ -176,6 +176,10 @@ ul ul {
 ol ul,
 ul ul {
   list-style-type: circle;
+}
+
+li {
+  line-height: $line-height-li;
 }
 
 em,

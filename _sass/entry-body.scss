@@ -7,6 +7,14 @@
   h6 {
     font-size: inherit;
     font-weight: bold;
+
+    &:not(:first-child) {
+      margin-top: 2em;
+    }
+  }
+
+  h1 {
+    font-size: $font-size-entry-h1;
   }
   
   h2,
