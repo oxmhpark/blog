@@ -1,6 +1,6 @@
 ---
 title: C＃：주요 메모
-slug: c＃-주요-메모
+slug: c샾-주요-메모
 abbr: C＃：Cheatsheet
 date: 2025-03-30 13:19:47 +0900
 years:
