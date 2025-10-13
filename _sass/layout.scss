@@ -1,0 +1,30 @@
+.container {
+  margin: 0 auto;
+  max-width: var(--width-frame);
+  padding: 0 10px;
+  width: 100%;
+}
+
+.wrapper-container {
+  min-height: 100%;
+  position: relative;
+
+  .wrapper-masthead {
+    margin-bottom: 25px;
+  }
+
+  .wrapper-main {
+    display: block;
+
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+
+  .wrapper-footer {
+    margin: 75px 0 25px 0;
+    font-size: smaller;
+  }
+}

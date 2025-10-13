@@ -1,0 +1,20 @@
+-
+  name: "NEMORIUM.NET"
+  url: "/"
+  class: "current"
+  icon: "/assets/CIN_TIGHT@NEMORIUM.NET.png"
+-
+  name: "#아카이브"
+  url: "/archives"
+  class: ""
+  icon: ""
+-
+  name: "#즐겨찾기"
+  url: "/bookmarks"
+  class: ""
+  icon: ""
+-
+  name: "#소개"
+  url: "/about"
+  class: ""
+  icon: ""

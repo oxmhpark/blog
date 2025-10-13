@@ -1,0 +1,12 @@
+{% if site.data.nav %}
+<nav>
+  <ul>
+    {% for nav in site.data.nav %}
+      <li><a{% if nav.class and nav.class != "" %} class="{{ nav.class }}"{% endif %} href="{{ nav.url }}">
+        {% if nav.icon and nav.icon != "" %}<img src="{{ nav.icon }}" alt="" />{% endif %}
+        {{ nav.name }}
+      </a></li>
+    {% endfor %}
+  </ul>
+</nav>
+{% endif %}

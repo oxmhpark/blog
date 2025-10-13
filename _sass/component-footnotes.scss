@@ -1,0 +1,35 @@
+sup[role="doc-noteref"] {
+  font-size: 0.8em;
+
+  a[rel="footnote"] {
+    &:before {
+      display: inline;
+      content: '※';
+    }
+  }
+}
+
+div[role="doc-endnotes"] {
+  @include hr;
+
+  min-width: 100% !important;
+  font-size: 0.8em;
+
+  ol,
+  ul {
+    counter-reset: footnotes;
+
+    li[role="doc-endnote"] {
+      counter-increment: footnotes;
+
+      &::marker {
+        content: '※' counter(footnotes) '. ';
+      }
+   
+      p {
+        display: inline;
+        margin: 0;
+      }
+    }
+  }
+}

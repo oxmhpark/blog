@@ -1,0 +1,59 @@
+# 체크리스트
+# [ ] 설정 -- /_config.yml
+# [ ] 도메인 -- /CNAME
+# [ ] 메뉴 구성 -- /_includes/nav.html
+# [ ] 첫 페이지 제목 -- /index.md
+# [ ] 아카이브 제목 -- /archives.md
+# [ ] 샘플 포스트 삭제 -- /_posts/2023-01-29-lorem-ipsum.md
+
+# 운영자 정보
+author: "__AUTHOR_NAME__"
+
+# 웹사이트 정보
+title: "__SITE_NAME__"
+description: "__SITE_DESCRIPTION__"
+lang: "ko"
+timezone: "Asia/Seoul"
+stylesheet_url: "/assets/style.css"
+favicon_url: ""
+
+# 주소체계
+url: "https://__SITE_URL__"
+enforce_ssl: "https://__SITE_URL__"
+baseurl: "/"
+permalink: "/:title/"
+format:
+  date: "%Y.%m.%d."
+  read_more:
+    label: "__READ_MORE__ &rarr;"
+  view_archives:
+    url: "/archives/"
+    label: "__VIEW_ARCHIVES__ &rarr;"
+
+# HTML/CSS 파서
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+sass:
+  style: :expanded
+
+# 빌드 타겟
+collections:
+  pages:
+    output: true
+    path: _pages
+    permalink: "/:title/"
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+
+# 플러그인
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag

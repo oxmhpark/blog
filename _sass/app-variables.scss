@@ -1,0 +1,108 @@
+/* @import url(https://use.typekit.net/xri2bkj.css); */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css');
+/* @import url('https://cdn.jsdelivr.net/gh/neodgm/neodgm-webfont@latest/neodgm_code/style.css'); */
+
+// Font Families
+$font-sans-serif: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+$font-serif: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+/* $font-monospace: "NeoDunggeunmo Code", "Bitstream Vera Sans Mono", "Courier", monospace; */
+$font-monospace: "JetBrains Mono", 굴림체, "Bitstream Vera Sans Mono", "Courier", monospace;
+
+// Typography
+$font-family-title: $font-sans-serif;
+$font-family-menu: $font-sans-serif;
+$font-family-heading: $font-sans-serif;
+$font-family-text: $font-serif;
+$font-family-quote: $font-serif;
+$font-family-meta: $font-sans-serif;
+$font-family-form: $font-sans-serif;
+$font-family-code: $font-monospace;
+
+$font-size-body: 18px;
+$font-size-entry-h1: 28px;
+$line-height-body: 1.7em;
+$line-height-li: 1.5em;
+
+:root {
+  --width-frame: 800px;
+
+  // Markup Colors
+  --color-link-default: #4183C4;
+  --color-link-hover: #224499;
+  --color-quote-background: #669;
+  --color-quote-text: #669;
+  --color-selected-background: #EEE;
+  --color-selected-text: #000;
+  --color-code-background: #E0E0E0;
+  --color-code-text: #222222;
+
+  // Layout Colors
+  --color-background: #FFF;
+  --color-background-alt: #CCC;
+  --color-nav-text: #333;
+  --color-nav-text-hover: #666;
+  
+  // Entry Colors  
+  --color-title-text: #000;
+  --color-title-text-hover: #333;
+  --color-subtitle-text: #333;
+  --color-subtitle-text-hover: #666;
+  --color-heading-text: #000;
+  --color-meta-text: #999;
+  --color-excerpt-text: #555;
+  --color-body-text: #333;
+
+  // Content Colors
+  --color-table-border: #CCC;
+  --color-table-header: #F8F8F8;
+  --color-table-row-even: #F8F8F8; 
+  --decoration-hr-color: #999;
+
+  // Component Colors
+  --color-pagination-background: var(--color-background);
+  --color-pagination-text: var(--color-link-default);
+  --color-pagination-background-hover: var(--color-selected-background);
+  --color-pagination-text-hover: var(--color-selected-text);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    // Markup Colors
+    --color-link-default: #4183C4;
+    --color-link-hover: #224499;
+    --color-quote-background: #669;
+    --color-quote-text: #669;
+    --color-selected-background: #111;
+    --color-selected-text: #EEE;
+    --color-code-background: #333;
+    --color-code-text: #DDD;
+
+    // Layout Colors
+    --color-background: #000;
+    --color-background-alt: #333;
+    --color-nav-text: #CCC;
+    --color-nav-text-hover: #999;
+
+    // Entry Colors
+    --color-title-text: #EEE;
+    --color-title-text-hover: #CCC;
+    --color-subtitle-text: #CCC;
+    --color-subtitle-text-hover: #999;
+    --color-heading-text: #FFF;
+    --color-meta-text: #666;
+    --color-excerpt-text: #555;
+    --color-body-text: #CCC;
+
+    // Content Colors
+    --color-table-border: #333;
+    --color-table-header: #111;
+    --color-table-row-even: #111; 
+    --decoration-hr-color: #666;
+
+    // Component Colors
+    --color-pagination-background: var(--color-background);
+    --color-pagination-text: var(--color-link-default);
+    --color-pagination-background-hover: var(--color-selected-background);
+    --color-pagination-text-hover: var(--color-selected-text);
+  }
+}

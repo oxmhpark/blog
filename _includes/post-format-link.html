@@ -1,0 +1,7 @@
+<article class="entry entry-format-list-item entry-format-link {% if post.banner %}entry-format-link-has-banner{% endif %}" {% if post.excerpt %} data-tooltip="{{ post.excerpt | escape }}" {% endif %}>
+<h1 class="entry-title"><a href="{% include parts-url.html %}">{% include parts-title-bookmark.html %}</a></h1>
+{% include parts-read-more.html %}
+<div class="entry-body entry-body-excerpt">
+{{ post.excerpt }}
+</div>
+</article>

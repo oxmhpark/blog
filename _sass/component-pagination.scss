@@ -1,0 +1,37 @@
+.pagination {
+	cursor: default;
+	text-align: center;
+
+	a,
+	span {
+		display: inline-block;
+		margin: 0;
+		padding: 0 0.4em;
+		min-width: 24px;
+		height: 24px;
+		line-height: 24px;
+		background-color: var(--color-pagination-background);
+		border-radius: 4px;
+		box-sizing: border-box;
+		font-size: 16px;
+
+		&+& {
+			margin-left: 0.5em;
+		}
+	}
+
+	a {
+		color: var(--color-pagination-text);
+
+		&:hover {
+			cursor: pointer;
+			text-decoration: none;
+			background-color: var(--color-pagination-background-hover);
+			color: var(--color-pagination-text-hover);
+		}
+	}
+
+	span {
+		color: var(--color-nav-text);
+	}
+}

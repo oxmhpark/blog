@@ -1,0 +1,12 @@
+{% for post in posts %}
+{% if forloop.first %}
+<div class="archives archives-type-terms archives-type-categories">
+    <h1>{{ site.data.keywords.archives.categories }}</h1>
+    <ul class="list-terms list-categories">
+{% endif %}
+        <li><a href="{{ post.url }}">#{% include parts-title.html %}</a></li>
+{% if forloop.last %}
+    </ul>
+</div>
+{% endif %}
+{% endfor %}

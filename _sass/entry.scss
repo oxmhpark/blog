@@ -1,0 +1,135 @@
+.entry {
+  padding-top: 2em;
+
+  img.cover {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .entry-title {
+    margin: 0;
+    font-size: 60px;
+    font-family: $font-family-text;
+    text-align: left;
+    font-weight: bold;
+    font-kerning: auto;
+    font-feature-settings: "kern","liga","dlig","hlig","cswh";
+    line-height: 1.2;
+    
+    @include mobile {
+      font-size: 46px;
+    }
+
+    img.banner {
+      display: block;
+    }
+
+    .title {
+      .title-wrap,
+      rt,
+      abbr,
+      .subtitle
+      {
+        color: inherit;
+      }
+
+      rt {
+        font-weight: normal;
+      }
+    
+      .subtitle {
+        font-size: 0.4em;
+        font-weight: normal;
+    
+        &:before {
+          display: inline;
+          content: " - ";
+        }
+      }
+    }
+  }
+
+  .entry-meta {
+    cursor: default;
+    color: var(--color-meta-text);
+    font-size: 0.85em;
+    font-family: $font-family-meta;
+
+    .entry-author {
+      display: none;
+    }
+
+    .entry-date {
+      display: inline;
+
+      a {
+        color: inherit;
+      }
+
+      /*
+      &.entry-date-modified {
+        color: #AAA;
+      }
+      */
+    }
+
+    .entry-meta-item {
+      display: inline;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline;
+        margin: 0 0.5em 0 0;
+
+        a {
+          color: inherit;
+
+          &:before {
+            content: "#";
+            display: inline;
+          }
+        }
+      }
+
+      &.entry-refs {
+        display: block;
+        margin: 0;
+
+        li {
+          display: block;
+          margin: 0;
+
+          a {
+            @include link-external;
+          }
+        }
+      }
+
+      &.entry-queries {
+        display: block;
+        margin: 0;
+
+        li {
+          a {
+            &:before {
+              content: '@';
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .entry-body {
+    margin-top: 1em;
+  }
+
+  .read-more {
+    display: block;
+    clear: both;
+    margin: 1em 0;
+    font-size: 15px;
+  }
+}

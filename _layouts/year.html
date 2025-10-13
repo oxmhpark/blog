@@ -1,0 +1,22 @@
+---
+---
+{% assign body_class = "body-archive body-archive-year" %}
+{% include base-header.html %}
+
+{% assign post = page %}
+{% include post-format-fulltext.html %}
+
+{% assign archiveName = post.title | to_i | plus: 0 %}
+{% assign writes = site.entry_writes | where_exp: "post", "post.years contains archiveName" | default: "" %}
+{% assign reads = site.entry_reads | where_exp: "post", "post.years contains archiveName" | default: "" %}
+{% assign studies = site.entry_studies | where_exp: "post", "post.years contains archiveName" | default: "" %}
+{% assign plays = site.entry_plays | where_exp: "post", "post.years contains archiveName" | default: "" %}
+{% if writes == "" %}{% assign writes = "" | split: "" %}{% endif %}
+{% if reads == "" %}{% assign reads = "" | split: "" %}{% endif %}
+{% if studies == "" %}{% assign studies = "" | split: "" %}{% endif %}
+{% if plays == "" %}{% assign plays = "" | split: "" %}{% endif %}
+{% assign posts = writes | concat: reads | concat: studies | concat: plays %}
+{% assign posts = posts | sort: "updated" | reverse %}
+{% include list-posts.html %}
+
+{% include base-footer.html %}

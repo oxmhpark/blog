@@ -1,0 +1,33 @@
+pattern: QUERY_HERE
+aladin:
+  label: 알라딘
+  class: aladdin
+  href: https://www.aladin.co.kr/search/wsearchresult.aspx?AuthorSearch=QUERY_HERE
+youtube:
+  label: 유튜브
+  class: youtube
+  href: https://youtube.com/QUERY_HERE
+imdb:
+  label: IMDB
+  class: imdb
+  href: https://www.imdb.com/name/QUERY_HERE/
+ko:
+  label: 위키백과
+  class: wikipedia-ko
+  href: https://ko.wikipedia.org/wiki/QUERY_HERE
+en:
+  label: 위키백과
+  class: wikipedia-en
+  href: https://en.wikipedia.org/wiki/QUERY_HERE
+ja:
+  label: 위키백과
+  class: wikipedia-ja
+  href: https://ja.wikipedia.org/wiki/QUERY_HERE
+namu:
+  label: 나무위키
+  class: namuwiki
+  href: https://namu.wiki/w/QUERY_HERE
+google:
+  label: 구글
+  class: google
+  href: https://www.google.com/search?q=QUERY_HERE

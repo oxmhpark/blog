@@ -1,0 +1,205 @@
+# 체크리스트
+# [x] 설정 -- /_config.yml
+# [x] 도메인 -- /CNAME
+# [x] 메뉴 구성 -- /_includes/nav.html
+# [x] 첫 페이지 제목 -- /index.md
+# [x] 아카이브 제목 -- /archives.md
+# [x] 샘플 포스트 삭제 -- /_posts/2023-01-29-lorem-ipsum.md
+
+# 운영자 정보
+author: "옥수박"
+
+# 웹사이트 정보
+title: "NEMORIUM.NET"
+description: ""
+lang: "ko"
+timezone: "Asia/Seoul"
+stylesheet_url: "/assets/style.css"
+favicon_url: "/assets/CIN_TIGHT@NEMORIUM.NET.png"
+
+# 주소체계
+url: "https://nemorium.net"
+enforce_ssl: "https://nemorium.net"
+baseurl: "/"
+permalink: ":slug"
+format:
+  date: "%Y.%m.%d."
+  year: "%Y"
+
+# HTML/CSS 파서
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+sass:
+  style: :expanded
+
+
+
+# 아카이브 정의
+collections:
+  archive_categories:
+    output: true
+    path: _archive_categories
+    permalink: "category/:slug"
+  archive_tags:
+    output: true
+    path: _archive_tags
+    permalink: "tag/:slug"
+  archive_years:
+    output: true
+    path: _archive_years
+    permalink: "year/:slug"
+  entry_pages:
+    output: _entry_pages
+    path: _entry_pages
+    permalink: ":slug"
+  entry_plays:
+    output: _entry_plays
+    path: _entry_plays
+    permalink: ":slug"
+  entry_reads:
+    output: _entry_reads
+    path: _entry_reads
+    permalink: ":slug"
+  entry_studies:
+    output: _entry_studies
+    path: _entry_studies
+    permalink: ":slug"
+  entry_writes:
+    output: true
+    path: _entry_writes
+    permalink: ":slug"
+
+
+
+# 아카이브 프로퍼티
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      meta:
+        - refs
+        - author
+        - date
+        - lastmod
+        - years
+        - categories
+        - tags
+  -
+    scope:
+      path: "_archive_categories"
+    values:
+      layout: category
+      meta:
+        - refs
+        - years
+        - categories
+        - tags
+  -
+    scope:
+      path: "_archive_tags"
+    values:
+      layout: tag
+      meta:
+        - refs
+        - years
+        - categories
+        - tags
+  -
+    scope:
+      path: "_archive_years"
+    values:
+      layout: year
+      meta: nil
+  -
+    scope:
+      path: "_entry_pages"
+    values:
+      layout: page
+      meta:
+        - date
+        - lastmod
+  -
+    scope:
+      path: "_entry_plays"
+    values:
+      layout: play
+      meta:
+        - refs
+        - date
+        - lastmod
+        - years
+        - categories
+        - tags
+        - links
+  -
+    scope:
+      path: "_entry_reads"
+    values:
+      layout: read
+      meta:
+        - refs
+        - date
+        - lastmod
+        - years
+        - categories
+        - tags
+        - links
+  -
+    scope:
+      path: "_entry_studies"
+    values:
+      layout: study
+      meta:
+        - refs
+        - date
+        - lastmod
+        - years
+        - categories
+        - tags
+        - links
+  -
+    scope:
+      path: "_entry_writes"
+    values:
+      layout: write
+      meta:
+        - refs
+        - date
+        - lastmod
+        - years
+        - categories
+        - tags
+        - links
+
+
+
+# 빌드 타겟
+exclude:
+  - blog.code-workspace
+  - _config.yml.sample
+  - .gitattributes
+  - .gitignore
+  - .hintrc
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - CNAME
+  - README.md
+  - _archive_categories/__TEMPLATE__.md
+  - _archive_tags/__TEMPLATE__.md
+  - _archive_years/__TEMPLATE__.md
+  - _entry_pages/__TEMPLATE__.md
+  - _entry_reads/__TEMPLATE__.md
+  - _entry_studies/__TEMPLATE__.md
+  - _entry_writes/__TEMPLATE__.md
+  - _entry_plays/__TEMPLATE__.md
+
+# 플러그인
+#plugins:
+#  - jekyll-sitemap
+#  - jekyll-feed
+#  - jekyll-seo-tag

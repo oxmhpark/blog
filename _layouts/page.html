@@ -1,0 +1,12 @@
+---
+---
+{% assign body_class = "body-article body-article-page" %}
+{% include base-header.html %}
+
+{% assign post = page %}
+{% include post-format-fulltext.html %}
+{% if post.comments %}
+{% include component-comments.html %}
+{% endif %}
+
+{% include base-footer.html %}

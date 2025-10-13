@@ -1,0 +1,15 @@
+---
+---
+{% assign body_class = "body-archive body-archive-category" %}
+{% include base-header.html %}
+
+{% assign post = page %}
+{% include post-format-fulltext.html %}
+
+{% assign collectionName = post.slug | prepend: "entry_" %}
+{% assign posts = site[collectionName] | default: "" %}
+{% if posts == "" %}{% assign posts = "" | split: "" %}{% endif %}
+{% assign posts = posts | sort: "updated" | reverse %}
+{% include list-posts.html %}
+
+{% include base-footer.html %}

@@ -1,0 +1,16 @@
+<!--
+{% if post.banner %}
+--><img class="banner" src="{{ post.banner }}" alt="{{ post.title | strip_html }}" /><!--
+{% endif %}
+--><span class="title"><!--
+{% if post.title %}
+	{% if post.ruby %}--><ruby><!--{% endif %}
+	{% if post.abbr %}--><abbr data-title="{{ post.abbr | strip_html }}"><!--{% endif %}
+	--><span class="title-wrap">{{ post.title }}</span><!--
+	{% if post.abbr %}--></abbr><!--{% endif %}
+	{% if post.ruby %}--><rt>{{ post.ruby }}</rt></ruby><!--{% endif %}
+	{% if post.subtitle %}--><span class="subtitle">{{ post.subtitle }}</span><!--{% endif %}
+{% else %}
+	--><span class="title-wrap">{{ post.excerpt | strip_html }}</span><!--
+{% endif %}
+--></span>

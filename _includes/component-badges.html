@@ -1,0 +1,11 @@
+{% if site.data.badges %}
+<div class="badges">
+  {% for group in site.data.badges %}
+    {% for badge in group %}
+      <a href="{{ badge.link }}"><img src="https://shields.io/badge/{{ badge.code }}" alt="{{ badge.name }}" /></a>
+    {% endfor %}
+    <br />
+  {% endfor %}
+</div>
+{% endif %}
+                                   

@@ -1,0 +1,125 @@
+.masthead {
+	height: 36px;
+	line-height: 36px;
+	cursor: default;
+	font-family: $font-family-title;
+	font-weight: normal;
+	font-size: 14px;
+	color: var(--color-title-text);
+
+	&:after,
+	&:before {
+		content: '';
+		display: block;
+		height: 14px;
+		clear: both;
+	}
+
+	.site-avatar {
+		display: none;
+	}
+
+	.site-info {
+		display: none;
+		
+		float: left;
+		margin-right: 16px;
+		text-align: left;
+		height: inherit;
+		line-height: inherit;
+		font-size: inherit;
+		font-weight: inherit;
+		color: inherit;
+
+		.site-name {
+			display: inline-block;
+			margin: 0;
+			height: inherit;
+			line-height: inherit;
+			font-size: inherit;
+			font-weight: inherit;
+			/* font-variant: small-caps;*/
+			color: inherit;
+
+			a {
+				&:link,
+				&:visited {
+					color: inherit;
+				}
+
+				&:active,
+				&:hover {
+					text-decoration: underline;
+					color: var(--color-title-text-hover);
+				}
+			}
+		}
+
+		.site-description {
+			display: none;
+		}
+	}
+
+	nav {
+		float: left;
+		text-align: left;
+		height: inherit;
+		line-height: inherit;
+		font-size: inherit;
+		font-weight: inherit;
+		/* font-family: $font-family-menu; */
+		/* text-transform: uppercase; */
+		/* color: var(--color-nav-text); */
+		color: inherit;
+
+		ul {
+			display: block;
+			margin: 0;
+			padding: 0;
+
+			li {
+				display: inline-block;
+				margin: 0;
+				padding: 0;
+	
+				&:not(:first-child) {
+					margin-left: 0.75em;
+
+					@include mobile {
+						margin-left: 0.5em;
+					}
+				}
+
+				a {
+					line-height: inherit;
+					font-size: inherit;
+					font-weight: inherit;
+					color: inherit;
+		
+					&:link,
+					&:visited {
+						color: var(--color-nav-text);
+					}
+		
+					&:active,
+					&:hover {
+						text-decoration: underline;
+						color: var(--color-nav-text-hover);
+					}
+					
+					&.current {
+						font-weight: bold;
+					}
+		
+					img {
+						display: inline-block;
+						vertical-align: -0.15em;
+						width: 1em;
+						height: 1em;
+						margin-right: 0.1em;
+					}
+				}
+			}
+		}		
+	}
+}

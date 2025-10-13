@@ -1,0 +1,62 @@
+.entry {
+	&.entry-format-list-item {
+		padding-top: 1em;
+	
+		/*
+		display: list-item;
+		list-style: square;
+		padding-top: 0;
+		margin-top: 0.5em;
+		margin-left: 2em;
+		*/
+	
+		.entry-title {
+			display: inline;
+			font-size: inherit;
+			/*
+			font-weight: inherit;
+			*/
+	
+			.subtitle {
+				display: inline;
+				font-size: inherit;
+			}
+		}
+	
+		.entry-meta {
+			display: inline;
+
+			.entry-refs {
+				display: none;
+			}
+	
+			.entry-date {
+				display: inline;
+			}
+
+			.entry-years {
+				display: none;
+			}
+	
+			.entry-categories {
+				display: none;
+			}
+	
+			.entry-tags {
+				display: none;
+			}
+
+			.entry-links {
+				display: none;
+			}
+		}
+	
+		.entry-body {
+			margin-top: 0;
+		}
+	
+		.read-more {
+			display: none;
+		}
+	}
+}

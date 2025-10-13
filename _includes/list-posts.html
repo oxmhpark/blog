@@ -1,0 +1,7 @@
+<div class="archives archive-type-posts">
+{% for post in posts %}
+{% if forloop.first and postsName != nil %}<h1>{{ postsName }}</h1>{% endif %}
+{% assign content = post.content %}
+{% include post-format-list-item.html %}
+{% endfor %}
+</div>

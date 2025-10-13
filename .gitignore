@@ -1,0 +1,12 @@
+_site
+package-lock.json
+Gemfile.lock
+/node_modules
+*.swp
+.sass-cache
+.jekyll-metadata
+.jekyll-cache/
+.DS_Store
+.localhost.log
+.localhost.pid
+/.obsidian

@@ -1,0 +1,13 @@
+ui:
+  read-more: 전문 읽기 &rarr;
+  read-more-bookmark: 〔…〕
+archives:
+  types: 대분류
+  categories: 중분류
+  tags: 소분류
+  years: 연도
+types:
+  writes: 쓰기
+  reads: 읽기
+  studies: 알기
+  plays: 놀기

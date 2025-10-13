@@ -1,0 +1,73 @@
+.entry-body {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    font-weight: bold;
+
+    &:not(:first-child) {
+      margin-top: 2em;
+    }
+  }
+
+  h1 {
+    font-size: $font-size-entry-h1;
+  }
+  
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    &:before,
+    &:after {
+      display: inline;
+    }
+
+    &:before {
+      padding-right: 0.5em;
+    }
+
+    &:after {
+      padding-left: 0.5em;
+    }
+  }
+
+  h2 {
+    &:before,
+    &:after {
+      content: "-";
+    }
+  }
+
+  h3 {
+    &:before,
+    &:after {
+      content: "--";
+    }
+  }
+
+  h4 {
+    &:before,
+    &:after {
+      content: "---";
+    }
+  }
+
+  h5 {
+    &:before,
+    &:after {
+      content: "----";
+    }
+  }
+
+  h6 {
+    &:before,
+    &:after {
+      content: "-----";
+    }
+  }
+}

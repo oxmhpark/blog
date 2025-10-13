@@ -1,0 +1,37 @@
+---
+layout: raw
+---
+<?xml version="1.0" encoding="UTF-8"?>
+{% assign writes = site.entry_writes | default "" %}
+{% assign reads = site.entry_reads | default "" %}
+{% assign studies = site.entry_studies | default "" %}
+{% assign plays = site.entry_plays | default "" %}
+{% if writes == "" %}{% assign writes = "" | split: "" %}{% endif %}
+{% if reads == "" %}{% assign reads = "" | split: "" %}{% endif %}
+{% if studies == "" %}{% assign studies = "" | split: "" %}{% endif %}
+{% if plays == "" %}{% assign plays = "" | split: "" %}{% endif %}
+{% assign posts = writes | concat: reads | concat: studies | concat: plays %}
+{% assign posts = posts | sort: "updated" | reverse %}
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for post in posts %}
+    <url>
+        <loc>{{ post.url | prepend: site.url }}</loc>
+		{% if post.updated == null %}
+		<lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+		{% else %}
+		<lastmod>{{ post.updated | date_to_xmlschema }}</lastmod>
+		{% endif %}
+		{% if post.sitemap.changefreq == null %}
+		<changefreq>daily</changefreq>
+		{% else %}
+		<changefreq>{{ post.sitemap.changefreq }}</changefreq>
+		{% endif %}
+
+		{% if post.sitemap.priority == null %}
+		<priority>0.5</priority>
+		{% else %}
+		<priority>{{ post.sitemap.priority }}</priority>
+		{% endif %}
+    </url>
+{% endfor %}
+</urlset>

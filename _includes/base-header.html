@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+  <meta name="author" content="{{ site.author }}" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <title>{% if page.title and page.title != "" %}{{ page.title }} – {% endif %}{{ site.title }}{% if site.description and site.description != "" %} – {{ site.description }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ post.excerpt | strip_html }}{% else %}{{ content | strip_html | truncatewords: 30 }}{% endif %}" />
+  {% assign metaKeywords = "" | split: ',' %}
+  {% if page.subtitle %}{% assign metaKeywords = metaKeywords | push: page.subtitle %}{% endif %}
+  {% if page.abbr %}{% assign metaKeywords = metaKeywords | push: page.abbr %}{% endif %}
+  {% if page.ruby %}{% assign metaKeywords = metaKeywords | push: page.ruby %}{% endif %}
+  {% if page.categories and page.categories.size > 0 %}{% assign metaKeywords = metaKeywords | concat: page.categories %}{% endif %}
+  {% if page.tags and page.tags.size > 0 %}{% assign metaKeywords = metaKeywords | concat: page.tags %}{% endif %}
+  {% if page.years and page.years.size > 0 %}{% assign metaKeywords = metaKeywords | concat: page.years %}{% endif %}
+  {% if metaKeywords.size > 0 %}<meta name="keywords" content="{{ metaKeywords | join: ',' | strip }}" />{% endif %}
+
+  {% if site.favicon_url %}<link rel="icon" type="image/png" sizes="32x32" href="{{ site.favicon_url }}" />{% endif %}
+  <link rel="stylesheet" type="text/css" href="{{ site.stylesheet_url }}" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.baseurl }}/sitemap.xml" />
+  <link rel="alternate" type="application/rss+xml" title="Updates" href="{{ site.baseurl }}/feed.xml" />
+  <link rel="canonical" href="{{ page.url }}" />
+  <link href="https://memo.nemorium.net/@oxmhpark" rel="me" />
+  <link href="https://orphans.codemach.net/@oxmhpark" rel="me" />
+</head>
+
+<body class="{{ body_class }}">
+<div id="bar"></div>
+<div class="wrapper-container">
+  
+  <div class="wrapper-masthead">
+    <div class="container">
+      <header class="masthead clearfix">
+        <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}{{ site.avatar }}" alt="{{ site.title }}" /></a>
+
+        <div class="site-info">
+          <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+          <p class="site-description">{{ site.description }}</p>
+        </div>
+
+        {% include layout-nav.html %}
+      </header>
+    </div>
+  </div>
+
+  <div class="wrapper-header">
+    <div class="container">
+      <footer class="header">
+        {% include layout-header.html %}
+      </footer>
+    </div>
+  </div>
+
+  <div class="wrapper-main">
+    <div id="main" role="main" class="container">
