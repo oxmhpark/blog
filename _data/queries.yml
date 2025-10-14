@@ -2,7 +2,8 @@ pattern: QUERY_HERE
 aladin:
   label: 알라딘
   class: aladdin
-  href: https://www.aladin.co.kr/search/wsearchresult.aspx?AuthorSearch=QUERY_HERE
+# href: https://www.aladin.co.kr/search/wsearchresult.aspx?AuthorSearch=QUERY_HERE
+  href: https://www.aladin.co.kr/author/wauthor_overview.aspx?AuthorSearch=QUERY_HERE
 youtube:
   label: 유튜브
   class: youtube
