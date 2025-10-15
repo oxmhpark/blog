@@ -119,9 +119,7 @@ defaults:
       path: "_entry_pages"
     values:
       layout: page
-      meta:
-        - date
-        - lastmod
+      meta: nil
   -
     scope:
       path: "_entry_plays"
