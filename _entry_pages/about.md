@@ -4,7 +4,7 @@ slug: about
 meta: null
 ---
 
-# 「NEMORIUM.NET」은:
+# NEMORIUM.NET은:
 
 * [옥수박]({{ site.data.profile.keyoxide }})이 메모를 정리하고 잡글을 쓰는 개인 블로그이다.
 * [내부 지침](/관리-및-운영-지침)에 따라 최소한의 비용으로 운영된다.
@@ -12,7 +12,7 @@ meta: null
 
 [^copyright]: 저작권에 대해 [혼란스럽고 양비론적인 문제의식]({{ site.data.license.description-link }})을 갖고 있다.
 
-# 「옥수박」은:
+# 옥수박은:
 
 > 지식보다 경험, 경험보다 사고력, 사고력보다 목적의식[^creed1].\
 > 내가 원치 않는 바를 남에게 요구하지 말라[^creed2].
