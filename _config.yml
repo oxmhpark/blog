@@ -176,6 +176,8 @@ defaults:
 
 
 # 빌드 타겟
+include:
+  - README.md
 exclude:
   - blog.code-workspace
   - _config.yml.sample
@@ -186,7 +188,6 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - CNAME
-#  - README.md
   - _archive_categories/__TEMPLATE__.md
   - _archive_tags/__TEMPLATE__.md
   - _archive_years/__TEMPLATE__.md
