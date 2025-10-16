@@ -88,9 +88,6 @@ NEMORIUM.NET
 * 고유명사는 한글 표기를 기본으로 삼되[^localization-policy], 첫 인용에는 원문을 병기한다.[^internationalization-policy]
 * `<h3>` 이하의 섹션 사용을 자제한다.
 * 반복 응답 또는 장문의 응답이 필요한 경우에는 그 내용을 게시물로 승격시킨다.
-* 모든 댓글에 응답할 의무는 없다.[^communication-policy]
-* 광고·스팸·사생활 침해성 댓글은 통보 없이 삭제한다.
 
 [^localization-policy]: 순우리말로 대체할 필요는 없다.
 [^internationalization-policy]: 이미 소분류로 지정된 경우에는 생략한다.
-[^communication-policy]: 소통이 주된 운영목적은 아니기 때문이다.
