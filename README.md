@@ -1,9 +1,3 @@
----
-title: 관리 및 운영 지침
-slug: 관리-및-운영-지침
-layout: page
-meta: nil
----
 NEMORIUM.NET
 ============
 
