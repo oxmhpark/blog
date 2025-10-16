@@ -176,9 +176,8 @@ defaults:
 
 
 # 빌드 타겟
-include:
-  - README.md
 exclude:
+  - README.md
   - blog.code-workspace
   - _config.yml.sample
   - .gitattributes
