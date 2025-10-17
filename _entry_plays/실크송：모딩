@@ -11,6 +11,5 @@ tags:
   - BepInEx (플러그인)
 excerpt: 흥미로운 실크송 모드들을 링크해둔다.
 ---
-* [BepInEx](https://github.com/BepInEx/BepInEx) -- 유니티 엔진용 DLL 인젝터.
 * [Silksong.DebugMod](https://github.com/hk-speedrunning/Silksong.DebugMod) -- 각종 디버그/테스트용 기능들.
 * [Silksong.QuickWarp](https://github.com/hk-speedrunning/Silksong.QuickWarp) -- 강제 씬 이동.
