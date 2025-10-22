@@ -1,6 +1,6 @@
 ---
-title: Mp3tag
-slug: mp3tag
+title: Mp3tag (앱)
+slug: mp3tag-앱
 refs:
   - https://www.mp3tag.de/
 categories:
