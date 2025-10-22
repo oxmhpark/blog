@@ -17,11 +17,11 @@ ko:
   class: wikipedia-ko
   href: https://ko.wikipedia.org/wiki/QUERY_HERE
 en:
-  label: 위키백과
+  label: Wikipedia
   class: wikipedia-en
   href: https://en.wikipedia.org/wiki/QUERY_HERE
 ja:
-  label: 위키백과
+  label: ウィキペディア
   class: wikipedia-ja
   href: https://ja.wikipedia.org/wiki/QUERY_HERE
 namu:
