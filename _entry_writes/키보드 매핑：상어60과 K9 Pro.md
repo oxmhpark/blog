@@ -48,32 +48,32 @@ excerpt: 현역인 K9 Pro와 백업용 상어60을 리매핑했다. 기존의 <k
 
 <kbd>SpaceFn</kbd>[^spacefn] 키 코드를 이용해 <kbd>Space</kbd> 키를 조건부 <kbd>Fn1</kbd> 키로 사용하고, 기존 <kbd>CapsLock</kbd> 위치는 <kbd>Fn2</kbd>로 배정했다. 추가된 `Fn2` 레이어에서는 <kbd>F11</kbd>~<kbd>F22</kbd> 입력을, `Fn3` 레이어에서는 <kbd>F21</kbd>~<kbd>F24</kbd> 및 <kbd>Pause</kbd>·<kbd>Vol-</kbd>·<kbd>Vol+</kbd>·<kbd>Mute</kbd> 입력을 받는다. 이 방식은 <kbd>Space</kbd> 키를 홀드해서 공백을 연속 입력할 수 없는 단점이 있다. 그러나 기능 손실 없이 추가 레이어에 접근할 수 있고, 사용 빈도가 높은 키를 중심으로 조작할 수 있다는 장점이 있다.
 
-| 레이어 | 위치                            | 기능                                         |
-|--------|---------------------------------|----------------------------------------------|
-| 0      | <kbd>Space</kbd>                | <kbd>SpaceFn1</kbd>                          |
-| 0      | <kbd>CapsLock</kbd>             | <kbd>Fn2</kbd>                               |
-| 0      | <kbd>BR0</kbd>                  | <kbd>←</kbd>                                 |
-| 0      | <kbd>BR1</kbd>                  | <kbd>↓</kbd>                                 |
-| 0      | <kbd>BR2</kbd>                  | <kbd>↑</kbd>                                 |
-| 0      | <kbd>BR3</kbd>                  | <kbd>→</kbd>                                 |
-| 0      | <kbd>Esc</kbd>                  | <kbd>Esc·~</kbd>                             |
-| 1      | <kbd>BR0</kbd>                  | <kbd>Home</kbd>                              |
-| 1      | <kbd>BR1</kbd>                  | <kbd>PgDn</kbd>                              |
-| 1      | <kbd>BR2</kbd>                  | <kbd>PgUp</kbd>                              |
-| 1      | <kbd>BR3</kbd>                  | <kbd>End</kbd>                               |
+| 레이어 | 위치                          | 기능                                       |
+|--------|-------------------------------|--------------------------------------------|
+| 0      | <kbd>Space</kbd>              | <kbd>SpaceFn1</kbd>                        |
+| 0      | <kbd>CapsLock</kbd>           | <kbd>Fn2</kbd>                             |
+| 0      | <kbd>BR0</kbd>                | <kbd>←</kbd>                               |
+| 0      | <kbd>BR1</kbd>                | <kbd>↓</kbd>                               |
+| 0      | <kbd>BR2</kbd>                | <kbd>↑</kbd>                               |
+| 0      | <kbd>BR3</kbd>                | <kbd>→</kbd>                               |
+| 0      | <kbd>Esc</kbd>                | <kbd>Esc·~</kbd>                           |
+| 1      | <kbd>BR0</kbd>                | <kbd>Home</kbd>                            |
+| 1      | <kbd>BR1</kbd>                | <kbd>PgDn</kbd>                            |
+| 1      | <kbd>BR2</kbd>                | <kbd>PgUp</kbd>                            |
+| 1      | <kbd>BR3</kbd>                | <kbd>End</kbd>                             |
 | 1      | <kbd>1·!</kbd>~<kbd>=·+</kbd> | <kbd>F1</kbd>~<kbd>F12</kbd>               |
-| 1      | <kbd>Esc</kbd>                  | <kbd>`·~</kbd>                               |
-| 1      | <kbd>Bs</kbd>                   | <kbd>Del</kbd>                               |
+| 1      | <kbd>Esc</kbd>                | <kbd>`·~</kbd>                             |
+| 1      | <kbd>Bs</kbd>                 | <kbd>Del</kbd>                             |
 | 2      | <kbd>1·!</kbd>~<kbd>=·+</kbd> | <kbd>F11</kbd>~<kbd>F22</kbd>[^duplicates] |
-| 2      | <kbd>BR0</kbd>                  | <kbd>CapsLock</kbd>                          |
-| 2      | <kbd>BR1</kbd>                  | <kbd>NumLock</kbd>                           |
-| 2      | <kbd>BR2</kbd>                  | <kbd>ScrlLock</kbd>                          |
-| 2      | <kbd>BR3</kbd>                  | <kbd>Print</kbd>                             |
+| 2      | <kbd>BR0</kbd>                | <kbd>CapsLock</kbd>                        |
+| 2      | <kbd>BR1</kbd>                | <kbd>NumLock</kbd>                         |
+| 2      | <kbd>BR2</kbd>                | <kbd>ScrlLock</kbd>                        |
+| 2      | <kbd>BR3</kbd>                | <kbd>Print</kbd>                           |
 | 3      | <kbd>1·!</kbd>~<kbd>4·$</kbd> | <kbd>F21</kbd>~<kbd>F24</kbd>[^duplicates] |
-| 3      | <kbd>Bs</kbd>                   | <kbd>Pause</kbd>                             |
-| 3      | <kbd>,·<</kbd>                  | <kbd>Vol-</kbd>                              |
-| 3      | <kbd>.·></kbd>                  | <kbd>Vol+</kbd>                              |
-| 3      | <kbd>/·?</kbd>                  | <kbd>Mute</kbd>                              |
+| 3      | <kbd>Bs</kbd>                 | <kbd>Pause</kbd>                           |
+| 3      | <kbd>,·<</kbd>                | <kbd>Vol-</kbd>                            |
+| 3      | <kbd>.·></kbd>                | <kbd>Vol+</kbd>                            |
+| 3      | <kbd>/·?</kbd>                | <kbd>Mute</kbd>                            |
 
 [^spacefn]: <kbd>Space</kbd> 키를 홀드하는 동안에는 <kbd>Fn</kbd> 키로, 릴리즈하는 순간에는 <kbd>Space</kbd> 키로 동작한다. <kbd>Fn1</kbd>~<kbd>Fn3</kbd>에 대응하는 <kbd>SpaceFn1</kbd>~<kbd>SpaceFn3</kbd> 코드가 있다.
 [^duplicates]: 번호키 배열과의 자리 맞춤을 고려해서, 레이어 1과 레이어 2에 <kbd>F11</kbd>~<kbd>F12</kbd>를, 레이어 2와 레이어 3에 <kbd>F21</kbd>~<kbd>F22</kbd>를 중복으로 배치했다. 
