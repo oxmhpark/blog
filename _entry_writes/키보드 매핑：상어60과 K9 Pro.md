@@ -12,16 +12,18 @@ tags:
   - QMK (앱)
   - VIA (앱)
   - Zadig (앱)
-excerpt: 현역인 K9 Pro와 백업용 상어60을 리매핑했다. 기존의 <kbd>Home</kbd>·<kbd>End</kbd>·<kbd>PgDn</kbd>·<kbd>PgUp</kbd> 입력 지원에 더해서, 3개의 <kbd>Fn</kbd> 키들-<kbd>SpaceFn</kbd>·<kbd>CapsLockFn</kbd>·<kbd>TabFn</kbd>-을 이용해서 <kbd>CapsLock</kbd>·<kbd>NumLock</kbd>·<kbd>ScrlLock</kbd>·<kbd>Print</kbd>·<kbd>F13</kbd>~<kbd>F24</kbd>·<kbd>M0</kbd>~<kbd>M15</kbd> 입력 지원을 추가했다.
+excerpt: 현역인 K9 Pro와 백업용 상어60을 리매핑했다. 기존의 <kbd>Home</kbd>·<kbd>End</kbd>·<kbd>PgDn</kbd>·<kbd>PgUp</kbd> 입력 지원에 더해서, 3개의 <kbd>Fn</kbd> 키(<kbd>SpaceFn</kbd>·<kbd>CapsLockFn</kbd>·<kbd>TabFn</kbd>)를 이용해서 <kbd>CapsLock</kbd>·<kbd>NumLock</kbd>·<kbd>ScrlLock</kbd>·<kbd>Print</kbd>·<kbd>F13</kbd>~<kbd>F24</kbd>·<kbd>M0</kbd>~<kbd>M15</kbd> 입력 지원을 추가했다.
 ---
-키보드가 자리를 많이 차지하는 것을 싫어해서 포커 배열을 쓰기 시작한 지 십수년 쯤 됐다. 로우 프로파일 키보드인 `K9 Pro`에 정착한 지도 몇 해가 지났다. 최근 블로그 정비하면서 [더 빠른 문장부호 입력 방법](/단축키로-특수문자-입력하기)을 궁리하던 중, 키 매핑을 손봐서 <kbd>F13</kbd> ~ <kbd>F24</kbd> 키 코드를 단축키 지정에 활용하자는 아이디어가 떠올랐다. 
+키보드가 자리를 많이 차지하는 것을 싫어해서 포커 배열을 쓰기 시작한 지 십수 년쯤 됐다. 로우 프로파일 키보드인 `K9 Pro`에 정착한 지도 몇 해가 지났다. 최근 블로그 정비하면서 [더 빠른 문장부호 입력 방법](/단축키로-특수문자-입력하기)을 궁리하던 중, <kbd>F13</kbd>~<kbd>F24</kbd> 키 코드를 단축키 지정에 활용하자는 아이디어가 떠올라 키 매핑을 손보기로 했다.
 
 # 매핑 계획
 
 ## 기존 매핑
 
-포커 배열 키보드는 우하단 특수키 4개 중 하나 이상을 <kbd>Fn</kbd> 키로 활용하는 경우가 많다. 그러나 표준 위치가 정해지지 않았다는 점에서 미완성으로 느껴졌고, 해당 영역 자체가 자주 누르기에 피곤했다. 그래서 활용 빈도는 낮지만 긴장 없이 누를 수 있는 <kbd>CapsLock</kbd>을 <kbd>Fn</kbd> 키로 전용해서 지금까지 사용했다. 여기에 더해, 우하단 특수키 4곳에 순서대로 <kbd>←</kbd>·<kbd>↓</kbd>·<kbd>↑</kbd>·<kbd>→</kbd>를 매핑해서 키 조합 없이 방향을 입력할 수 있게 했다. 화살표들이 한 줄로 배치된 것은 타협이지만, `vi`의 <kbd>H</kbd>·<kbd>J</kbd>·<kbd>K</kbd>·<kbd>L</kbd> 이동 시퀀스를 그대로 따른 것이므로 적응은 쉽다[^hjkl]. `Fn` 레이어에서는 관습에 따라 숫자 키 열에 <kbd>F1</kbd> ~ <kbd>F12</kbd>를, 커스텀 룰을 확장해서 우하단 특수키 4개에 순서대로 <kbd>Home</kbd> <kbd>PgDn</kbd> <kbd>PgUp</kbd> <kbd>End</kbd>를 배정했다.
+포커 배열 키보드는 우하단 특수키 4개 중 하나 이상을 <kbd>Fn</kbd> 키로 활용하는 경우가 많다. 그러나 표준 위치가 정해지지 않았다는 점에서 미완성으로 느껴졌고, 해당 영역 자체가 '기능 키'[^hotkey-function]라면 몰라도 '조합 키'[^hotkey-modifier]로 활용하기에는 피곤했다. 그래서 활용 빈도는 낮지만 긴장 없이 누를 수 있는 <kbd>CapsLock</kbd>을 <kbd>Fn</kbd> 키로 전용해서 지금까지 사용했다. 여기에 더해, 우하단 특수키 4곳에 순서대로 <kbd>←</kbd>·<kbd>↓</kbd>·<kbd>↑</kbd>·<kbd>→</kbd>를 매핑해서 키 조합 없이 방향을 입력할 수 있게 했다. 화살표들이 한 줄로 배치된 것은 타협이지만, `vi`의 <kbd>H</kbd>·<kbd>J</kbd>·<kbd>K</kbd>·<kbd>L</kbd> 이동 시퀀스를 그대로 따른 것이므로 적응은 쉽다[^hjkl]. `Fn` 레이어에서는 관습에 따라 숫자 키 열에 <kbd>F1</kbd>~<kbd>F12</kbd>를, 커스텀 룰을 확장해서 우하단 특수키 4개에 순서대로 <kbd>Home</kbd> <kbd>PgDn</kbd> <kbd>PgUp</kbd> <kbd>End</kbd>를 배정했다.
 
+[^hotkey-function]: 단축 키 조합에서 실제 기능을 결정하는 코드.
+[^hotkey-modifier]: 단축 키 조합에서 다른 키의 기능을 바꾸는 코드.
 [^hjkl]: 이 배열이 입력 빈도를 반영했다는 주장은 증명되지 않았지만, 코딩 환경에서는 타당하다고 본다.
 
 | 레이어 | 위치                            | 기능                           |
@@ -36,7 +38,7 @@ excerpt: 현역인 K9 Pro와 백업용 상어60을 리매핑했다. 기존의 <k
 | 1      | <kbd>BR1</kbd>                  | <kbd>PgDn</kbd>                |
 | 1      | <kbd>BR2</kbd>                  | <kbd>PgUp</kbd>                |
 | 1      | <kbd>BR3</kbd>                  | <kbd>End</kbd>                 |
-| 1      | <kbd>1·!</kbd> ~ <kbd>=·+</kbd> | <kbd>F1</kbd> ~ <kbd>F12</kbd> |
+| 1      | <kbd>1·!</kbd>~<kbd>=·+</kbd> | <kbd>F1</kbd>~<kbd>F12</kbd> |
 | 1      | <kbd>Esc</kbd>                  | <kbd>`·~</kbd>                 |
 | 1      | <kbd>Bs</kbd>                   | <kbd>Del</kbd>                 |
 
@@ -44,36 +46,37 @@ excerpt: 현역인 K9 Pro와 백업용 상어60을 리매핑했다. 기존의 <k
 
 ## 새 매핑
 
-<kbd>SpaceFn</kbd>[^spacefn] 키 코드를 이용해 <kbd>Space</kbd> 키를 조건부 <kbd>Fn1</kbd> 키로 사용하고, 기존 <kbd>CapsLock</kbd> 위치는 <kbd>Fn2</kbd>로 배정했다. 추가된 `Fn2` 레이어에서는 <kbd>F11</kbd> ~ <kbd>F22</kbd> 입력을, `Fn3` 레이어에서는 <kbd>F21</kbd> ~ <kbd>F24</kbd> 및 <kbd>Pause</kbd>·<kbd>Vol-</kbd>·<kbd>Vol+</kbd>·<kbd>Mute</kbd> 입력을 받는다. 이 방식은 <kbd>Space</kbd> 키를 홀드해서 공백을 연속으로 입력할 수 없는 단점이 있다. 그러나 기능을 희생하지 않고 추가 레이어에 접근할 수 있으며 가장 사용 빈도가 높고 편안한 키를 중심으로 조작할 수 있다는 장점이 있다.
+<kbd>SpaceFn</kbd>[^spacefn] 키 코드를 이용해 <kbd>Space</kbd> 키를 조건부 <kbd>Fn1</kbd> 키로 사용하고, 기존 <kbd>CapsLock</kbd> 위치는 <kbd>Fn2</kbd>로 배정했다. 추가된 `Fn2` 레이어에서는 <kbd>F11</kbd>~<kbd>F22</kbd> 입력을, `Fn3` 레이어에서는 <kbd>F21</kbd>~<kbd>F24</kbd> 및 <kbd>Pause</kbd>·<kbd>Vol-</kbd>·<kbd>Vol+</kbd>·<kbd>Mute</kbd> 입력을 받는다. 이 방식은 <kbd>Space</kbd> 키를 홀드해서 공백을 연속 입력할 수 없는 단점이 있다. 그러나 기능 손실 없이 추가 레이어에 접근할 수 있고, 사용 빈도가 높은 키를 중심으로 조작할 수 있다는 장점이 있다.
 
-| 레이어 | 위치                            | 기능                            |
-|--------|---------------------------------|---------------------------------|
-| 0      | <kbd>Space</kbd>                | <kbd>SpaceFn1</kbd>             |
-| 0      | <kbd>CapsLock</kbd>             | <kbd>Fn2</kbd>                  |
-| 0      | <kbd>BR0</kbd>                  | <kbd>←</kbd>                    |
-| 0      | <kbd>BR1</kbd>                  | <kbd>↓</kbd>                    |
-| 0      | <kbd>BR2</kbd>                  | <kbd>↑</kbd>                    |
-| 0      | <kbd>BR3</kbd>                  | <kbd>→</kbd>                    |
-| 0      | <kbd>Esc</kbd>                  | <kbd>Esc·~</kbd>                |
-| 1      | <kbd>BR0</kbd>                  | <kbd>Home</kbd>                 |
-| 1      | <kbd>BR1</kbd>                  | <kbd>PgDn</kbd>                 |
-| 1      | <kbd>BR2</kbd>                  | <kbd>PgUp</kbd>                 |
-| 1      | <kbd>BR3</kbd>                  | <kbd>End</kbd>                  |
-| 1      | <kbd>1·!</kbd> ~ <kbd>=/+</kbd> | <kbd>F1</kbd> ~ <kbd>F12</kbd>  |
-| 1      | <kbd>Esc</kbd>                  | <kbd>`·~</kbd>                  |
-| 1      | <kbd>Bs</kbd>                   | <kbd>Del</kbd>                  |
-| 2      | <kbd>1·!</kbd> ~ <kbd>=/+</kbd> | <kbd>F11</kbd> ~ <kbd>F22</kbd> |
-| 2      | <kbd>BR0</kbd>                  | <kbd>CapsLock</kbd>             |
-| 2      | <kbd>BR1</kbd>                  | <kbd>NumLock</kbd>              |
-| 2      | <kbd>BR2</kbd>                  | <kbd>ScrlLock</kbd>             |
-| 2      | <kbd>BR3</kbd>                  | <kbd>Print</kbd>                |
-| 3      | <kbd>1·!</kbd> ~ <kbd>4/$</kbd> | <kbd>F21</kbd> ~ <kbd>F24</kbd> |
-| 3      | <kbd>Bs</kbd>                   | <kbd>Pause</kbd>                |
-| 3      | <kbd>,·<</kbd>                  | <kbd>Vol-</kbd>                 |
-| 3      | <kbd>.·></kbd>                  | <kbd>Vol+</kbd>                 |
-| 3      | <kbd>/·?</kbd>                  | <kbd>Mute</kbd>                 |
+| 레이어 | 위치                            | 기능                                         |
+|--------|---------------------------------|----------------------------------------------|
+| 0      | <kbd>Space</kbd>                | <kbd>SpaceFn1</kbd>                          |
+| 0      | <kbd>CapsLock</kbd>             | <kbd>Fn2</kbd>                               |
+| 0      | <kbd>BR0</kbd>                  | <kbd>←</kbd>                                 |
+| 0      | <kbd>BR1</kbd>                  | <kbd>↓</kbd>                                 |
+| 0      | <kbd>BR2</kbd>                  | <kbd>↑</kbd>                                 |
+| 0      | <kbd>BR3</kbd>                  | <kbd>→</kbd>                                 |
+| 0      | <kbd>Esc</kbd>                  | <kbd>Esc·~</kbd>                             |
+| 1      | <kbd>BR0</kbd>                  | <kbd>Home</kbd>                              |
+| 1      | <kbd>BR1</kbd>                  | <kbd>PgDn</kbd>                              |
+| 1      | <kbd>BR2</kbd>                  | <kbd>PgUp</kbd>                              |
+| 1      | <kbd>BR3</kbd>                  | <kbd>End</kbd>                               |
+| 1      | <kbd>1·!</kbd>~<kbd>=·+</kbd> | <kbd>F1</kbd>~<kbd>F12</kbd>               |
+| 1      | <kbd>Esc</kbd>                  | <kbd>`·~</kbd>                               |
+| 1      | <kbd>Bs</kbd>                   | <kbd>Del</kbd>                               |
+| 2      | <kbd>1·!</kbd>~<kbd>=·+</kbd> | <kbd>F11</kbd>~<kbd>F22</kbd>[^duplicates] |
+| 2      | <kbd>BR0</kbd>                  | <kbd>CapsLock</kbd>                          |
+| 2      | <kbd>BR1</kbd>                  | <kbd>NumLock</kbd>                           |
+| 2      | <kbd>BR2</kbd>                  | <kbd>ScrlLock</kbd>                          |
+| 2      | <kbd>BR3</kbd>                  | <kbd>Print</kbd>                             |
+| 3      | <kbd>1·!</kbd>~<kbd>4·$</kbd> | <kbd>F21</kbd>~<kbd>F24</kbd>[^duplicates] |
+| 3      | <kbd>Bs</kbd>                   | <kbd>Pause</kbd>                             |
+| 3      | <kbd>,·<</kbd>                  | <kbd>Vol-</kbd>                              |
+| 3      | <kbd>.·></kbd>                  | <kbd>Vol+</kbd>                              |
+| 3      | <kbd>/·?</kbd>                  | <kbd>Mute</kbd>                              |
 
-[^spacefn]: <kbd>Space</kbd> 키를 홀드하는 동안에는 <kbd>Fn1</kbd> 키로, 릴리즈하는 순간에는 <kbd>Space</kbd> 키로 동작한다.
+[^spacefn]: <kbd>Space</kbd> 키를 홀드하는 동안에는 <kbd>Fn</kbd> 키로, 릴리즈하는 순간에는 <kbd>Space</kbd> 키로 동작한다. <kbd>Fn1</kbd>~<kbd>Fn3</kbd>에 대응하는 <kbd>SpaceFn1</kbd>~<kbd>SpaceFn3</kbd> 코드가 있다.
+[^duplicates]: 번호키 배열과의 자리 맞춤을 고려해서, 레이어 1과 레이어 2에 <kbd>F11</kbd>~<kbd>F12</kbd>를, 레이어 2와 레이어 3에 <kbd>F21</kbd>~<kbd>F22</kbd>를 중복으로 배치했다. 
 
 ## 매크로
 
@@ -83,7 +86,7 @@ excerpt: 현역인 K9 Pro와 백업용 상어60을 리매핑했다. 기존의 <k
 
 ## 상어60
 
-구입 당시 널리 쓰이던 `DZ60` 보드[^dz60-controller][^dz60-dfu-hotkey]가 설치된 키보드. 해당 보드는 `VIA` 앱을 지원하지 않으므로[^dz60-via-support] `QMK Configurator`로 매핑 프로필과 펌웨어를 마련하고 `QMK Toolkit`으로 플래싱했다. 첫 시도는 드라이버 불일치 이슈[^dz60-driver-error]로 실패했지만, `Zadig` 앱으로 드라이버를 강제로 변경[^dz60-driver-fix]하고 플래싱에 성공했다.
+구입 당시 널리 쓰이던 `DZ60` 보드[^dz60-controller][^dz60-dfu-hotkey]가 설치된 키보드. 해당 보드는 `VIA` 앱을 지원하지 않으므로[^dz60-via-support] `QMK Configurator`로 매핑 프로필과 펌웨어를 마련하고 `QMK Toolbox`로 플래싱했다. 첫 시도는 드라이버 불일치 이슈[^dz60-driver-error]로 실패했지만, `Zadig` 앱으로 드라이버를 강제로 변경[^dz60-driver-fix]하고 플래싱에 성공했다.
 
 [^dz60-via-support]: 본 작업에서는 장치를 인식시키는 방법이 있는지 조사하지 않았다.
 [^dz60-controller]: `ATmega32U4` 컨트롤러를 사용한다.
@@ -98,6 +101,6 @@ excerpt: 현역인 K9 Pro와 백업용 상어60을 리매핑했다. 기존의 <k
 # 결과 보고
 
 1. 키 조합 없이 <kbd>←</kbd>, <kbd>↓</kbd>, <kbd>↑</kbd>, <kbd>→</kbd> 키 코드를 입력할 수 있다.
-2. <kbd>Space</kbd> 키 조합으로 <kbd>F1</kbd> ~ <kbd>F12</kbd>, <kbd>Home</kbd>, <kbd>End</kbd>, <kbd>PgDn</kbd>, <kbd>PgUp</kbd> 키 코드를 입력할 수 있다.
-3. <kbd>CapsLock</kbd> 키 조합으로 <kbd>F11</kbd> ~ <kbd>F24</kbd>, <kbd>CapsLock</kbd>, <kbd>NumLock</kbd>, <kbd>ScrlLock</kbd>, <kbd>Print</kbd> 키 코드를 입력할 수 있다.
-4. <kbd>Space</kbd> + <kbd>Tab</kbd> 또는 <kbd>CapsLock</kbd> + <kbd>Tab</kbd> 키 조합으로 <kbd>F21</kbd> ~ <kbd>F24</kbd>, <kbd>Pause</kbd>, <kbd>Vol-</kbd>, <kbd>Vol+</kbd>, <kbd>Mute</kbd> 키 코드를 입력할 수 있다.
+2. <kbd>Space</kbd> 키 조합으로 <kbd>F1</kbd>~<kbd>F12</kbd>, <kbd>Home</kbd>, <kbd>End</kbd>, <kbd>PgDn</kbd>, <kbd>PgUp</kbd> 키 코드를 입력할 수 있다.
+3. <kbd>CapsLock</kbd> 키 조합으로 <kbd>F11</kbd>~<kbd>F24</kbd>, <kbd>CapsLock</kbd>, <kbd>NumLock</kbd>, <kbd>ScrlLock</kbd>, <kbd>Print</kbd> 키 코드를 입력할 수 있다.
+4. <kbd>Space</kbd> + <kbd>Tab</kbd> 또는 <kbd>CapsLock</kbd> + <kbd>Tab</kbd> 키 조합으로 <kbd>F21</kbd>~<kbd>F24</kbd>, <kbd>Pause</kbd>, <kbd>Vol-</kbd>, <kbd>Vol+</kbd>, <kbd>Mute</kbd> 키 코드를 입력할 수 있다.
