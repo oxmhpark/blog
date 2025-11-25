@@ -11,6 +11,28 @@
 		<ul class="entry-meta-item entry-queries">
 			{% assign query_pattern = site.data.queries.pattern %}
 
+			{% if post.queries.homepage %}
+				{% assign query_string = post.queries.homepage | remove: ' ' %}
+				{% assign query_class = site.data.queries.homepage.class %}
+				{% assign query_href = site.data.queries.homepage.href %}
+				{% assign query_label = site.data.queries.homepage.label %}
+				{% assign queries = query_string | split: ',' %}
+				{% for query in queries %}
+					<li class="query-{{ query_class }}"><a href='{{ query_href | replace: query_pattern, query }}'>{{ query_label }}</a></li>
+				{% endfor %}
+			{% endif %}
+
+			{% if post.queries.discord %}
+				{% assign query_string = post.queries.discord | remove: ' ' %}
+				{% assign query_class = site.data.queries.discord.class %}
+				{% assign query_href = site.data.queries.discord.href %}
+				{% assign query_label = site.data.queries.discord.label %}
+				{% assign queries = query_string | split: ',' %}
+				{% for query in queries %}
+					<li class="query-{{ query_class }}"><a href='{{ query_href | replace: query_pattern, query }}'>{{ query_label }}</a></li>
+				{% endfor %}
+			{% endif %}
+
 			{% if post.queries.youtube %}
 				{% assign query_string = post.queries.youtube | remove: ' ' %}
 				{% assign query_class = site.data.queries.youtube.class %}

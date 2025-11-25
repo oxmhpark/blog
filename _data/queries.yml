@@ -1,4 +1,12 @@
 pattern: QUERY_HERE
+homepage:
+  label: Homepage
+  class: homepage
+  href: QUERY_HERE
+discord:
+  label: Discord
+  class: discord
+  href: https://discord.gg/QUERY_HERE
 aladin:
   label: 알라딘
   class: aladdin
