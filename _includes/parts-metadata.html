@@ -122,7 +122,6 @@
 			{% endif %}
 		</ul>
 	{% endif %}
-	{% endif %}
 
 	{% if post.meta and post.meta contains 'date' %}<p class="entry-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.format.date }}</p>{% endif %}
 	{% if post.meta and post.meta contains 'lastmod' and post.lastmod %}<p class="entry-date entry-date-modified" datetime="{{ post.lastmod | date_to_xmlschema }}">(Updated: {{ post.lastmod | date: site.format.date }})</p>{% endif %}
