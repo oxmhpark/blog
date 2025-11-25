@@ -1,13 +1,13 @@
 <div class="entry-meta">
-	{% if post.meta and post.meta contains 'refs' %}
-	{% if post.refs %}
+	{% if post.meta and post.meta contains 'refs' and post.refs %}
 		<ul class="entry-meta-item entry-refs">
 			{% for ref in post.refs %}
 				<li><a href="{{ ref }}">{{ ref }}</a></li>
 			{% endfor %}
 		</ul>
 	{% endif %}
-	{% if post.queries %}
+
+	{% if post.meta and post.meta contains 'queries' and post.queries %}
 		<ul class="entry-meta-item entry-queries">
 			{% assign query_pattern = site.data.queries.pattern %}
 

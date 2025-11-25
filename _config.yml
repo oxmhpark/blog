@@ -82,6 +82,7 @@ defaults:
     values:
       meta:
         - refs
+        - queries
         - author
         - date
         - lastmod
@@ -95,6 +96,7 @@ defaults:
       layout: category
       meta:
         - refs
+        - queries
         - years
         - categories
         - tags
@@ -105,6 +107,7 @@ defaults:
       layout: tag
       meta:
         - refs
+        - queries
         - years
         - categories
         - tags
@@ -127,6 +130,7 @@ defaults:
       layout: play
       meta:
         - refs
+        - queries
         - date
         - lastmod
         - years
@@ -140,6 +144,7 @@ defaults:
       layout: read
       meta:
         - refs
+        - queries
         - date
         - lastmod
         - years
@@ -153,6 +158,7 @@ defaults:
       layout: study
       meta:
         - refs
+        - queries
         - date
         - lastmod
         - years
@@ -166,6 +172,7 @@ defaults:
       layout: write
       meta:
         - refs
+        - queries
         - date
         - lastmod
         - years
